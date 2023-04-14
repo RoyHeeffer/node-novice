@@ -36,8 +36,11 @@ In beide frameworks zijn transacties een belangrijk onderdeel van het beheer van
 
 Een transactie in Laravel kan op de volgende manier worden uitgevoerd:
 
-```php
+<hr />
+<details>
+  <summary>Vergelijkbaar codevoorbeeld in Laravel</summary>
 
+```php
 use Illuminate\Support\Facades\DB;
 
 Route::get('/test', function () {
@@ -52,6 +55,9 @@ Route::get('/test', function () {
     }
 });
 ```
+
+</details>
+<hr/>
 
 In het bovenstaande voorbeeld wordt DB::beginTransaction() gebruikt om een transactie te starten en DB::commit() wordt gebruikt om de transactie te bevestigen. Als er een fout optreedt, wordt de transactie met DB::rollBack() ongedaan gemaakt. Hiermee voorkom je dat ongewenste veranderingen in de database worden doorgevoerd.
 

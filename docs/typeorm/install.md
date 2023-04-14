@@ -41,7 +41,7 @@ export const dbConnection = async () => {
 
 ```
 
-In dit voorbeeld gebruiken we een **PostgreSQL-database**, maar je kunt ook andere database typen gebruiken, zoals MySQL, MSSQL, SQLite en Oracle en is is ondersteuning voor no sql databases als MongoDb.
+In dit voorbeeld gebruiken we een **MySQL-database**, maar je kunt ook andere database typen gebruiken, zoals PostgreSQL, MSSQL, SQLite en Oracle en is is ondersteuning voor no sql databases als MongoDb.
 
 > ##### Vergelijkingen met Laravel
 >
