@@ -1,6 +1,8 @@
 # Project
 
-**Eindopdracht**: Maak een eenvoudige CRUD-applicatie met Express.js en TypeORM! Het doel van dit project is om PHP-ontwikkelaars kennis te laten maken met het bouwen van webtoepassingen met Node.js en de bijbehorende frameworks en libraries.
+## Eindopdracht
+
+Maak een eenvoudige CRUD-applicatie met Express.js en TypeORM! Het doel van dit project is om PHP-ontwikkelaars kennis te laten maken met het bouwen van webtoepassingen met Node.js en de bijbehorende frameworks en librarie
 
 In dit project ga je een eenvoudige blog-app bouwen met behulp van de nieuw geleerde vaardigheden. Je leert hoe je een server opzet met Express.js, hoe je een database maakt en configureert met TypeORM en hoe je een eenvoudige blog-app bouwt met behulp van EJS-templates.
 

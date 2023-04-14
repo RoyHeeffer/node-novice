@@ -24,9 +24,6 @@
 * Project
 
   - [Opdracht](project/intro.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
-  - [CDN](cdn.md)
-  - [Offline Mode (PWA)](pwa.md)
-  - [Server-Side Rendering (SSR)](ssr.md)
-  - [Embed Files](embed-files.md)
+  - [Start guidelines](project/start-guidelines.md)
+  - [Helpers](project/helpers.md)
+  - [EJS-templates](project/helpers.md)
