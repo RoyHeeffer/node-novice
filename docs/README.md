@@ -31,4 +31,20 @@ Naast de theorie en codevoorbeelden bevat het curriculum ook een eindopdracht. D
 
 Dit curriculum is speciaal ontworpen voor ervaren PHP-developers die hun vaardigheden willen uitbreiden en hun carrièremogelijkheden willen vergroten. Het is ontworpen om praktische vaardigheden te ontwikkelen die onmiddellijk kunnen worden toegepast in een professionele omgeving.
 
+**Nodejs**<br/>
+Node.js is een open-source, cross-platform, JavaScript runtime omgeving die de uitvoering van JavaScript code buiten een browser mogelijk maakt. Het wordt vaak gebruikt voor het bouwen van schaalbare netwerkapplicaties en webapplicaties.
+Hier zijn een paar best use cases voor Node.js:
+
+**Real-time toepassingen**: Dankzij de event-driven, niet-blokkerende I/O-functionaliteit is Node.js bijzonder geschikt voor het ontwikkelen van real-time toepassingen zoals chatsystemen en online gaming platforms.
+
+**Microservices**: Node.js biedt de mogelijkheid om microservices te bouwen, waarbij elke microservice zijn eigen functionaliteit heeft. Dankzij de lage overhead en het gebruik van RESTful API's kunnen deze microservices zeer efficiënt worden uitgevoerd.
+
+**Server-side webapplicaties**: Node.js kan worden gebruikt voor het bouwen van server-side webapplicaties met behulp van frameworks zoals Express en Koa. Het biedt uitstekende prestaties voor het uitvoeren van server-side taken.
+
+Node.js is minder geschikt voor CPU-intensieve taken, zoals het uitvoeren van complexe algoritmen, omdat JavaScript een single-threaded taal is. Dit betekent dat Node.js slechts één CPU-kern kan gebruiken, in tegenstelling tot multi-threaded talen zoals Python en Java. Als de taak te CPU-intensief is, is het beter om een andere taal te gebruiken die beter geschikt is hiervoor.
+
+Het grote verschil tussen Node.js en PHP is dat Node.js is gebouwd op basis van de V8 JavaScript-engine van Google en PHP is een server-side scripting taal. Node.js is vooral geschikt voor het bouwen van real-time, schaalbare netwerkapplicaties en webapplicaties, terwijl PHP voornamelijk wordt gebruikt voor het bouwen van dynamische websites en webapplicaties.
+
+Het beste gebruik van Node.js hangt af van de specifieke vereisten van het project. Als real-time functionaliteit of schaalbaarheid belangrijk zijn, kan Node.js een goede keuze zijn. Als het gaat om het bouwen van een dynamische website of webapplicatie met een traditionele server-side taal zoals PHP, kan het beter zijn om deze talen te gebruiken.
+
 Geniet van het curriculum en veel succes hebt met het ontwikkelen van backend-applicaties met Node.js, Express.js en TypeORM.
