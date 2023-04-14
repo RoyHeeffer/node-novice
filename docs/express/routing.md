@@ -4,7 +4,7 @@
 
 Express.js routing is het proces waarbij een bepaalde URI (Uniform Resource Identifier) wordt gekoppeld aan een functie die de specifieke functionaliteit voor die URI uitvoert. Dit wordt gedaan door gebruik te maken van de methoden `app.get(), app.post(), app.put(), app.delete()` etc..
 
-In Express.js kunt je de route definiëren met deze methoden en de URI en de functie die uitgevoerd moet worden als argumenten gebruiken. Hieronder een voorbeeld van hoe een route wordt gedefinieerd in Express.js:
+In Express.js kunt je een route definiëren met deze methoden en de URI en de callback functie die uitgevoerd moet worden als argumenten gebruiken. Hieronder een voorbeeld van hoe een route wordt gedefinieerd in Express.js:
 
 ```javascript
 import express from "express";

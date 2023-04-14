@@ -16,7 +16,7 @@ In Express.js worden controllers gebruikt om de logica van de web-applicatie te 
 **Middleware**<br/>
 In Express.js wordt middleware gebruikt om gegevens te verwerken die tussen jouw server en de gebruikers worden verstuurd. Hiermee kunt je bijvoorbeeld beveiligingsmaatregelen implementeren, zoals het verifiëren van een gebruikersinlog of het verifiëren van de geldigheid van de gegevens die worden verzonden. Dit systeem is gemakkelijk te installeren en te configureren, en je kunt hierbij gebruik maken van standaard functies of zelf geschreven code.
 
-In vergelijking met het Laravel framework, is Express.js meer gericht op flexibiliteit en snelheid, terwijl Laravel meer gericht is op gemak en functionaliteit. complete webapplicatie kunt opzetten, met ingebouwde functionaliteiten zoals authenticatie en autorisatie. Express.js is meer gericht op flexibiliteit en geeft de ontwikkelaar de vrijheid om de architectuur en opbouw van de applicatie volledig zelf te bepalen.
+In vergelijking met het Laravel framework, is Laravel meer gericht is op gemak en functionaliteit om zo complete webapplicatie te kunnen opzetten, met ingebouwde functionaliteiten zoals authenticatie en autorisatie. Express.js is meer gericht op flexibiliteit en snelheid, en geeft de developer de vrijheid om de architectuur en opbouw van de applicatie volledig zelf te bepalen.
 
 ## Core functies
 
@@ -40,16 +40,15 @@ app.set("views", path.join(__dirname, "views"));
 
 ```javascript
 import express from "express";
-import bodyParser from "body-parser";
 
 const app = express();
 
 // Use the body-parser middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json()); // to support JSON-encoded bodies
+app.use(express.urlencoded({ extended: true })); // to support URL-encoded bodies
 ```
 
-`app.listen()`: Dit is de functie die je kunt gebruiken om jouw Express-applicatie te starten en naar requests te luisteren op een bepaalde **poort**. Hier is een voorbeeld:
+`app.listen()`: Dit is de functie die je kunt gebruiken om jouw Express-applicatie te starten en naar requests te luisteren op een bepaalde **poort**. In dit voorbeeld creëren we een server die luistert op poort 3000:
 
 ```javascript
 import express from "express";
@@ -64,3 +63,6 @@ app.listen(port, () => {
 ```
 
 Deze functies vormen de basis van elke Express.js-applicatie. Het is belangrijk om te begrijpen hoe deze functies werken en hoe ze samenwerken om jouw Express-applicatie aan te sturen.
+Bekijk ook de [docs] voor meer informatie over deze functies.
+
+[docs]: https://expressjs.com/en

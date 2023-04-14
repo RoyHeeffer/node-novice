@@ -5,7 +5,7 @@
 Hier is een voorbeeld van hoe je een nieuw Express.js-project kunt opzetten met behulp van de **npm-packagemanager**.
 De eerste stappen worden gedaan in je terminal:
 
-Maak een nieuwe map voor jouw project:
+Maak een nieuwe map voor jouw project(Windows):
 
 ```bash
 mkdir myapp
@@ -121,7 +121,7 @@ myapp/
 
 **routes/**: Dit is de map waarin je jouw routes opslaat. Routes zijn de paden waarlangs gebruikers jouw applicatie kunnen benaderen en de bijbehorende functies die worden uitgevoerd als een gebruiker een specifiek pad bezoekt.
 
-**views/**: Dit is de map waarin je jouw weergaven opslaat. Weergaven zijn bestanden die jouw applicatie gebruikt om dynamische HTML-pagina's te renderen.
+**views/**: Dit is de map waarin je jouw view-templates opslaat. De templates zijn bestanden die jouw applicatie gebruikt om dynamische HTML-pagina's te renderen.
 
 **package.json**: Bevat informatie over de npm-pakketten die nodig zijn voor de applicatie.
 
