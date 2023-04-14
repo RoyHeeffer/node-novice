@@ -56,10 +56,10 @@ Dit zal de seed-functie uitvoeren en de gegevens in de database toevoegen.
 
 ## Factories
 
-Knex.js kent ook factories voor snellere data seeding, om factories te gebruiken moet je een package zoals `knex-factory` installeren. Run voor de factories lib het volgende command in je terminal:
+Knex.js kent ook factories voor snellere data seeding, om factories te gebruiken moet je een package zoals `knex-factory` installeren voor. Run voor de factories lib het volgende command in je terminal:
 
 ```sh
-npm i knex-factory
+npm i knex-factory faker
 ```
 
 Vervolgens kun je een factory-definitiebestand maken, waarin je de eigenschappen van de objecten definieert die je wilt genereren.
@@ -69,8 +69,9 @@ Hier is een eenvoudig voorbeeld van een factory-definitie voor een "users" tabel
 ```javascript
 import knex from "knex";
 import { Factory } from "knex-factory";
+import faker from "faker";
 
-Factory.define("users", db, async (faker) => {
+Factory.define("users", async () => {
   return {
     name: faker.name.firstName(),
     email: faker.internet.email(),
