@@ -1,284 +1,34 @@
-# Introductie ExpressJs
+# Nodejs curriculum - novice
 
-> An awesome project.
+Dit curriculum is speciaal ontworpen voor ervaren PHP developers die willen leren werken met Node.js, Express.js en TypeORM. Het curriculum is volledig gericht op het ontwikkelen van backend-toepassingen en is ontworpen om je te helpen jouw vaardigheden als ontwikkelaar uit te breiden.
 
-Express.js is een populaire JavaScript-framework voor het maken van web-applicaties. Het maakt gebruik van Node.js en biedt een aantal handige functies voor het aanmaken van routes, het verwerken van formulieren en het werken met bestanden. Hieronder is een voorbeeld van hoe je een eenvoudige web-applicatie kunt maken met Express.js:
+## Opzet van het curriculum
 
-```
-const express = require('express'); // import Express
-const app = express(); // create an Express app
+Het curriculum is verdeeld in meerdere cursussen, elk gericht op een specifieke niveau binnen backend-ontwikkeling. Elke cursus heeft een aantal hoofdtopics die diepgaand worden behandeld en aan de hand van codevoorbeelden worden uitgelegd. Naast de theoretische uitleg zijn er ook veel praktische opdrachten om de geleerde concepten in de praktijk te brengen.
 
-app.get('/', (req, res) => { // define a route for the root URL
-res.send('Hello, World!'); // send a response when the route is accessed
-});
+Aan het einde van elke cursus is er een eindopdracht, waarin je de geleerde kennis kunt toepassen om een project te bouwen. Na het voltooien van de eindopdracht wordt er een assessment afgenomen om te beoordelen of je de geleerde concepten volledig begrijpt en kunt toepassen.
 
-app.listen(3000, () => { // start the server on port 3000
-console.log('Server listening on port 3000');
-});
+## Opbouw van de stof
 
-```
+De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen zoals caching en load balancing.
 
-De bovenstaande code maakt een Express-applicatie aan en definieert een route voor de root-URL (`'/'`). Wanneer deze route wordt benaderd, stuurt de server de tekst **'Hello, World!'** terug als antwoord. De server start vervolgens op poort 3000 en geeft een bericht weer in de console wanneer de server is gestart.
+## Leerdoel
 
-Dit is een zeer basale expressjs-applicatie. Je kunt het gebruiken als basis voor jouw eigen web-applicaties en het uitbreiden met meer routes, functies en middleware.
+Het doel van dit curriculum is om ervaren PHP-ontwikkelaars op te leiden tot volwaardige backend-ontwikkelaars met behulp van Node.js, Express.js en TypeORM. Na het voltooien van dit curriculum ben je in staat om een backend van een applicatie te ontwerpen, te ontwikkelen en te beheren, waarbij je gebruikmaakt van de nieuwste technologieën en best practices.
 
-Om een beetje meer complexere routes te maken, kunt je gebruik maken van route parameters. Hieronder is een voorbeeld van hoe je een route kunt maken die een gebruiker groet met zijn naam:
+## Leerdoelen
 
-```
-app.get('/greet/:name', (req, res) => {
-res.send(`Hello, ${req.params.name}!`);
-});
+Na afronding van dit curriculum heb je:
 
-```
+- Een grondig begrip van de fundamenten van Node.js, Express.js en TypeORM
+- Ervaring met het werken met TypeORM-entiteiten, repositories, queries en transacties
+- De vaardigheden om efficiënte en effectieve backend-applicaties te ontwikkelen met Node.js, Express.js en TypeORM
+- Een beter begrip van de overeenkomsten en verschillen tussen Node.js en PHP
 
-In deze route wordt gebruik gemaakt van een route parameter genaamd `name`. Dit wordt aangegeven door het gebruik van een `:` voor de parameter naam. De waarde van deze parameter is beschikbaar via het `req.params object`.
+## Extra informatie
 
-Je kunt ook gebruik maken van query parameters, die zijn beschikbaar via het req.query object. Hier is een voorbeeld van hoe je een route kunt maken die een zoekopdracht verwerkt:
+Naast de theorie en codevoorbeelden bevat het curriculum ook een eindopdracht. De eindopdracht is ontworpen om je te helpen je nieuwe vaardigheden toe te passen en om praktische ervaring op te doen met het ontwikkelen van een backend-applicaties.
 
-```
-app.get('/search', (req, res) => {
-res.send(`Search results for: ${req.query.q}`);
-});
+Dit curriculum is speciaal ontworpen voor ervaren PHP-developers die hun vaardigheden willen uitbreiden en hun carrièremogelijkheden willen vergroten. Het is ontworpen om praktische vaardigheden te ontwikkelen die onmiddellijk kunnen worden toegepast in een professionele omgeving.
 
-```
-
-In dit voorbeeld, verwacht de route een query parameter met de naam `q`. Bijvoorbeeld, de volgende URL zou de zoekresultaten voor **"Express js"** weergeven: `/search?q=Express js`
-
-Je kunt ook gebruik maken van middleware functies in express.js. Middleware functies zijn functies die worden uitgevoerd tussen het aanroepen van een route en het verzenden van een antwoord. Hier is een voorbeeld van hoe je een middleware functie kunt gebruiken om een logboek bij te houden van alle aanvragen:
-
-```
-app.use((req, res, next) => {
-console.log(`${req.method} request received at ${req.url}`);
-next();
-});
-
-```
-
-In dit voorbeeld, de middleware functie logt de methode van de aanvraag (bijv. `GET` of `POST`) en de URL waarop de aanvraag is ontvangen. De `next()` functie wordt aangeroepen om aan te geven dat de volgende stap in de request-response cyclus moet worden uitgevoerd.
-
-Dit zijn slechts enkele van de vele mogelijkheden die Express.js biedt voor het maken van web-applicaties. Je kunt deze basis gebruiken en het uitbreiden met meer routes, functies en middleware om aan jouw specifieke vereisten te voldoen.
-
-```yaml
-theme:
-  name: readthedocs
-```
-
-## mkdocs
-
-The default theme, which was built as a custom [Bootstrap] theme, supports most
-every feature of MkDocs.
-
-![mkdocs](../img/mkdocs.png)
-
-In addition to the default [theme configuration options][theme], the `mkdocs` theme
-supports the following options:
-
-- **`highlightjs`**: Enables highlighting of source code in code blocks using
-  the [highlight.js] JavaScript library. Default: `True`.
-
-- **`hljs_style`**: The highlight.js library provides 79 different [styles]
-  (color variations) for highlighting source code in code blocks. Set this to
-  the name of the desired style. Default: `github`.
-
-- **`hljs_languages`**: By default, highlight.js only supports 23 common
-  languages. List additional languages here to include support for them.
-
-      ```code
-
-  const express = require('express'); // import Express
-  const app = express(); // create an Express app
-
-app.get('/', (req, res) => { // define a route for the root URL
-res.send('Hello, World!'); // send a response when the route is accessed
-});
-
-app.listen(3000, () => { // start the server on port 3000
-console.log('Server listening on port 3000');
-});
-
-````
-
-- **`analytics`**: Defines configuration options for an analytics service.
-  Currently, only Google Analytics v4 is supported via the `gtag` option.
-
-  - **`gtag`**: To enable Google Analytics, set to a Google Analytics v4
-    tracking ID, which uses the `G-` format. See Google's documentation to
-    [Set up Analytics for a website and/or app (GA4)][setup-ga4] or to
-    [Upgrade to a Google Analytics 4 property][upgrade-ga4].
-
-        ```yaml
-        theme:
-            name: mkdocs
-            analytics:
-                gtag: G-ABC123
-        ```
-
-        When set to the default (`null`) Google Analytics is disabled for the
-        site.
-
-- **`shortcuts`**: Defines keyboard shortcut keys.
-
-  ```yaml
-  theme:
-    name: mkdocs
-    shortcuts:
-      help: 191 # ?
-      next: 78 # n
-      previous: 80 # p
-      search: 83 # s
-````
-
-All values must be numeric key codes. It is best to use keys which are
-available on all keyboards. You may use <https://keycode.info/> to determine
-the key code for a given key.
-
-- **`help`**: Display a help modal which lists the keyboard shortcuts.
-  Default: `191` (&quest;)
-
-- **`next`**: Navigate to the "next" page. Default: `78` (n)
-
-- **`previous`**: Navigate to the "previous" page. Default: `80` (p)
-
-- **`search`**: Display the search modal. Default: `83` (s)
-
-- **`navigation_depth`**: The maximum depth of the navigation tree in the
-  sidebar. Default: `2`.
-
-- **`nav_style`**: This adjusts the visual style for the top navigation bar; by
-  default, this is set to `primary` (the default), but it can also be set to
-  `dark` or `light`.
-
-  ```yaml
-  theme:
-    name: mkdocs
-    nav_style: dark
-  ```
-
-- **`locale`**{ #mkdocs-locale }: The locale (language/location) used to
-  build the theme. If your locale is not yet supported, it will fallback
-  to the default.
-
-  The following locales are supported by this theme:
-
-  - `en`: English (default)
-  - `de`: German
-  - `es`: Spanish
-  - `fa`: Persian (Farsi)
-  - `fr`: French
-  - `it`: Italian
-  - `ja`: Japanese
-  - `nb`: Norwegian Bokmål
-  - `nn`: Norwegian Nynorsk
-  - `pt_BR`: Portuguese (Brazil)
-  - `ru`: Russian
-  - `tr_TR`: Turkish (Turkey)
-  - `uk`: Ukrainian
-  - `zh_CN`: Simplified Chinese
-
-  See the guide on [localizing your theme] for more information.
-
-## readthedocs
-
-A clone of the default theme used by the [Read the Docs] service, which offers
-the same restricted feature-set as its parent theme. Like its parent theme, only
-two levels of navigation are supported.
-
-![ReadTheDocs](../img/readthedocs.png)
-
-In addition to the default [theme configuration options][theme], the `readthedocs`
-theme supports the following options:
-
-- **`highlightjs`**: Enables highlighting of source code in code blocks using
-  the [highlight.js] JavaScript library. Default: `True`.
-
-- **`hljs_languages`**: By default, highlight.js only supports 23 common
-  languages. List additional languages here to include support for them.
-
-  ```yaml
-  theme:
-    name: readthedocs
-    highlightjs: true
-    hljs_languages:
-      - yaml
-      - rust
-  ```
-
-- **`analytics`**: Defines configuration options for an analytics service.
-
-  - **`gtag`**: To enable Google Analytics, set to a Google Analytics v4
-    tracking ID, which uses the `G-` format. See Google's documentation to
-    [Set up Analytics for a website and/or app (GA4)][setup-ga4] or to
-    [Upgrade to a Google Analytics 4 property][upgrade-ga4].
-
-        ```yaml
-        theme:
-            name: readthedocs
-            analytics:
-                gtag: G-ABC123
-        ```
-
-        When set to the default (`null`) Google Analytics is disabled for the
-
-  - **`anonymize_ip`**: To enable anonymous IP address for Google Analytics,
-    set this to `True`. Default: `False`.
-
-- **`include_homepage_in_sidebar`**: Lists the homepage in the sidebar menu. As
-  MkDocs requires that the homepage be listed in the `nav` configuration
-  option, this setting allows the homepage to be included or excluded from
-  the sidebar. Note that the site name/logo always links to the homepage.
-  Default: `True`.
-
-- **`prev_next_buttons_location`**: One of `bottom`, `top`, `both` , or `none`.
-  Displays the “Next” and “Previous” buttons accordingly. Default: `bottom`.
-
-- **`navigation_depth`**: The maximum depth of the navigation tree in the
-  sidebar. Default: `4`.
-
-- **`collapse_navigation`**: Only include the page section headers in the
-  sidebar for the current page. Default: `True`.
-
-- **`titles_only`**: Only include page titles in the sidebar, excluding all
-  section headers for all pages. Default: `False`.
-
-- **`sticky_navigation`**: If True, causes the sidebar to scroll with the main
-  page content as you scroll the page. Default: `True`.
-
-- **`locale`**{ #readthedocs-locale }: The locale (language/location) used to
-  build the theme. If your locale is not yet supported, it will fallback
-  to the default.
-
-  The following locales are supported by this theme:
-
-  - `en`: English (default)
-  - `fr`: French
-  - `es`: Spanish
-  - `ja`: Japanese
-  - `pt_BR`: Portuguese (Brazil)
-  - `zh_CN`: Simplified Chinese
-  - `de`: German
-  - `fa`: Persian (Farsi)
-  - `it`: Italian
-  - `tr_TR`: Turkish (Turkey)
-  - `ru`: Russian
-  - `uk`: Ukrainian
-
-  See the guide on [localizing your theme] for more information.
-
-- **`logo`**: To set a logo on your project instead of the plain text
-  `site_name`, set this variable to be the location of your image. Default: `null`.
-
-## Third Party Themes
-
-A list of third party themes can be found in the MkDocs [community wiki]. If you
-have created your own, please feel free to add it to the list.
-
-[third party themes]: #third-party-themes
-[theme]: configuration.md#theme
-[bootstrap]: https://getbootstrap.com/
-[highlight.js]: https://highlightjs.org/
-[styles]: https://highlightjs.org/static/demo/
-[setup-ga4]: https://support.google.com/analytics/answer/9304153?hl=en&ref_topic=9303319
-[upgrade-ga4]: https://support.google.com/analytics/answer/9744165?hl=en&ref_topic=9303319
-[read the docs]: https://readthedocs.org/
-[community wiki]: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
-[localizing your theme]: localizing-your-theme.md
+Geniet van het curriculum en veel succes hebt met het ontwikkelen van backend-applicaties met Node.js, Express.js en TypeORM.
