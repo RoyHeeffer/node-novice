@@ -118,6 +118,8 @@ Route::get('/about', function () {
 
 Als je kijkt naar deze twee voorbeelden zie je dat de manier van routes definieren ongeveer hetzelfde is als in laravel. Het grootste verschil is de locatie waar de routes worden gedefinieerd en de manier waarop ze worden geëxporteerd in Express.js
 
+> In Express.js-routing is het belangrijk om een goede response te geven op de verschillende soorten verzoeken. De meest voorkomende responses zijn `res.send()` en `res.json()` je kunt ook de status-code aanpassen bijvoorbeeld `res.status(404).json({message: "not found"})`, Bekijk ook de [docs] voor meer informatie.
+
 ## Volledig voorbeeld
 
 Omdat routes worden gedefinieerd in aparte bestanden of modules en moeten deze worden geëxporteerd naar de hoofdapplicatie. Een voorbeeld van een router-module in Express.js zou er als volgt uit kunnen zien:
@@ -163,3 +165,5 @@ app.listen(3000, () => {
 In bovenstaand voorbeeld, importeert de hoofdapplicatie de router-module met de naam router uit het bestand **routes/router.js**. De `app.use()` functie wordt gebruikt om de router-module te gebruiken voor verzoeken die beginnen met `'/'`. Dit betekent dat de routes gedefinieerd in de router-module zullen worden uitgevoerd voor verzoeken naar de server met een pad dat begint met `'/'`.
 
 Dit is vergelijkbaar met hoe routing werkt in Laravel, waar routes worden gedefinieerd in aparte bestanden en worden toegevoegd aan de hoofdapplicatie via een service provider.
+
+[docs]: https://expressjs.com/en/5x/api.html#res

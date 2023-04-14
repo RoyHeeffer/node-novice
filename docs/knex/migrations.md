@@ -4,9 +4,9 @@
 
 Migraties in Knex.js zijn een belangrijk onderdeel van het beheer van de database-structuur in je project. Hieronder is het proces van het aanmaken, bijwerken en verwijderen van tabellen, velden en indexen met behulp van migraties in Knex.js.
 
-**Aanmaken van een migratie:** Voer de volgende opdracht uit in jouw terminal om een nieuwe migratie aan te maken: `knex migrate:make [naam van migratie]`. Dit zal een nieuw bestand creëren in de migrations-folder waarin je jouw migratie kunt schrijven.
+**Aanmaken van een migratie:** Voer de volgende opdracht uit in jouw terminal om een nieuwe migratie aan te maken: `npm run knex:migrate:make [naam van migratie]`. Dit zal een nieuw bestand creëren in de migrations-folder waarin je jouw migratie kunt schrijven.
 
-**Aanmaken van tabellen:** In de migratiebestanden, kun jw tabellen aanmaken met behulp van de `.createTable` methode van Knex.js. Deze bestanden bevatten altijd een up en down functie.
+**Aanmaken van tabellen:** In de migratiebestanden, kun jouw tabellen aanmaken met behulp van de `.createTable` methode van Knex.js. Deze bestanden bevatten altijd een up en down functie.
 
 ```javascript
 exports.up = function (knex) {
@@ -23,18 +23,20 @@ exports.down = function (knex) {
 };
 ```
 
-**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .table-methode te gebruiken om een bestaande tabel op te halen en vervolgens de .`addColumn, .dropColumn, en .renameColumn` methoden te gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Hieronder is een voorbeeld van het toevoegen van een nieuw veld **'bio'** aan de 'users'-tabel:
+**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .table-methode te gebruiken om een bestaande tabel op te halen en vervolgens de tabel aanpassen, aanvullen enzovoort eventueel kun je de `addColumn`, `.dropColumn`, en `.renameColumn` methoden te gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Hieronder is een voorbeeld van het toevoegen van een nieuwe column **'bio'** aan de 'users'-tabel:
 
 ```javascript
 exports.up = function (knex) {
   return knex.schema.table("users", (table) => {
     table.text("bio");
+    table.string("email").alter();
   });
 };
 
 exports.down = function (knex) {
   return knex.schema.table("users", (table) => {
     table.dropColumn("bio");
+    table.string("email").notNullable().alter();
   });
 };
 ```
