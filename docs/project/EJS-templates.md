@@ -1,40 +1,156 @@
-# Project
+# EJS-templates
 
-## Eindopdracht
+Embedded JavaScript, of EJS, is een template-engine voor Node.js die het mogelijk maakt om dynamische HTML-pagina's te genereren. Het werkt door het insluiten van JavaScript-code in HTML-bestanden. Lees hier meer over in de [docs].
 
-Maak een eenvoudige CRUD-applicatie met Express.js en TypeORM! Het doel van dit project is om PHP-ontwikkelaars kennis te laten maken met het bouwen van webtoepassingen met Node.js en de bijbehorende frameworks en librarie
+## Kort voorbeeld
 
-In dit project ga je een eenvoudige blog-app bouwen met behulp van de nieuw geleerde vaardigheden. Je leert hoe je een server opzet met Express.js, hoe je een database maakt en configureert met TypeORM en hoe je een eenvoudige blog-app bouwt met behulp van EJS-templates.
+Hieronder vind je een kort voorbeeld hoe je deze kan gebruiken:
 
-De verwachte tijdsbesteding voor dit project is ongeveer 6-10 uur, afhankelijk van jouw vaardigheidsniveau en ervaring. Het is aan te raden om deze tijd te verspreiden over een aantal dagen of weken, zodat je de tijd hebt om de stof op te nemen en te oefenen.
+```javascript
+const express = require("express");
+const app = express();
+const path = require("path");
 
-**Doelstelling**: Deelnemers moeten in staat zijn om Express.js en TypeORM op een eenvoudige manier te gebruiken voor het maken van een CRUD-applicatie.
+// Set the view engine and view folder
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-Na afronding van dit project, zal je de volgende doelstellingen bereikt hebben:
+// Render a view template
+app.get("/", (req, res) => {
+  res.render("home", { title: "Homepage", message: "Welcome to my blog!" });
+});
 
-- Begrip van hoe een server opgezet kan worden met Express.js.
-- Inzicht in het werken met databases met behulp van TypeORM.
-- Kennis van het werken met EJS-templates.
-- Ervaring met het bouwen van een eenvoudige blog-applicatie.
-- Begrip van hoe Node.js kan worden gebruikt als alternatief voor PHP.
+app.listen(3000, () => {
+  console.log("Server started on port 3000");
+});
+```
 
-**Stappen:**
+Hier wordt de **view engine** ingesteld op `EJS` en wordt de map waarin de EJS-bestanden zich bevinden ingesteld als de views directory. Vervolgens wordt er een route-handler aangemaakt voor de root van de website en wordt het bestand `index.ejs` gerenderd met de gegeven variabelen title en message. In het EJS-bestand kunnen deze variabelen vervolgens worden gebruikt door ze tussen `<%= %>` tags te plaatsen:
 
-**1**: Maak een nieuwe Express.js-applicatie met TypeORM en maak minimaal een `Post` en `User` entity aan als basis voor de applicatie.
+```html
+<!-- views/home.ejs -->
 
-**2**: Maak een repository voor deze entity en voeg CRUD-functionaliteit toe, zoals het opslaan, bijwerken, verwijderen en ophalen van gegevens uit de database.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= message %></h1>
+  </body>
+</html>
+```
 
-**3**: Maak routes en controllers voor de CRUD-functionaliteit en test ze door middel van postman of een andere tool.
-Voeg eventueel validatie en middleware toe om de functionaliteit van de applicatie uit te breiden.
+Dit voorbeeld zal een HTML-pagina renderen met als titel **"Homepage"** en een h1-tag met de tekst **"Welcome to my blog!"**.
 
-**Bonus uitdaging**: In deze sectie vind je een hoofdstuk over `EJS-templates`(embedded javascript), er zijn een aantal voorbeelden aangeleverd, gebruik deze om een frontend aan je applicatie te hangen.
+## Templates
 
-**Beoordeling**: De opdracht wordt beoordeeld op basis van het correct functioneren van de CRUD-functionaliteit, de structuur van de code en de toepassing van Express.js en TypeORM.
-Je project zal beoordeeld worden op basis van de volgende criteria:
+Hieronder vind je wat simpele, niet gestylde templates om je snel op weg te helpen:
 
-- Het succesvol afronden van het project en het behalen van de doelstellingen.
-- De kwaliteit van de code en de consistentie in stijl en opmaak.
-- De functionaliteit en het ontwerp van de blog-applicatie.
-- De kwaliteit van de documentatie en het vermogen om het project te presenteren en te bespreken.
+```html
+<!-- views/home.ejs -->
 
-We wensen je veel succes en plezier met dit project!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Home</title>
+  </head>
+  <body>
+    <h1>Welcome to the Blog!</h1>
+    <ul>
+      <% posts.forEach(function(post) { %>
+      <li>
+        <a href="/post/<%= post.id %>"><%= post.title %></a>
+        <p><%= post.content %></p>
+        <p>Author: <%= post.author.name %></p>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
+```
+
+```html
+<!-- views/login.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login to the Blog</h1>
+    <% if (error) { %>
+    <p><%= error %></p>
+    <% } %>
+    <form action="/login" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
+```
+
+```html
+<!-- views/newPost.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create a New Post</title>
+  </head>
+  <body>
+    <h1>Create a New Post</h1>
+    <% if (error) { %>
+    <p><%= error %></p>
+    <% } %>
+    <form action="/post/new" method="POST">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" /><br /><br />
+      <label for="content">Content:</label>
+      <textarea id="content" name="content"></textarea><br /><br />
+      <button type="submit">Create Post</button>
+    </form>
+  </body>
+</html>
+```
+
+```html
+<!-- views/editPost.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Post</title>
+  </head>
+  <body>
+    <h1>Edit Post</h1>
+    <% if (error) { %>
+    <p><%= error %></p>
+    <% } %>
+    <form action="/post/<%= post.id %>/edit" method="POST">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value="<%= post.title %>"
+      /><br /><br />
+      <label for="content">Content:</label>
+      <textarea id="content" name="content"><%= post.content %></textarea
+      ><br /><br />
+      <button type="submit">Update Post</button>
+    </form>
+  </body>
+</html>
+`
+```
+
+[docs]: https://ejs.co/#docs
