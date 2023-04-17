@@ -16,7 +16,24 @@ TypeORM ondersteunt beide patronen en geeft je de vrijheid om te kiezen welk pat
 
 [docs]: https://typeorm.io/active-record-data-mapper
 
-> Goed om te weten is dat Entity-manager en getRepository onderdeel zijn van het Data mapper patroon
+**Active Records**: In Active Record implementeert elk model de basis CRUD-operaties (Create, Read, Update, Delete), en het maakt gebruik van de metadata van het model om automatisch query's op te stellen en op te halen.
+Hier zijn een aantal voorbeelden:
+
+```javascript
+// create a new user
+const user = new User();
+user.name = "John Doe";
+user.email = "john.doe@example.com";
+
+// save the user to the database
+await user.save();
+
+// find all users
+const users = await User.find();
+
+// delete a user
+await user.remove();
+```
 
 **EntityManager**: Dit is een object dat verantwoordelijk is voor het beheren van entities en het uitvoeren van database-operaties. Het EntityManager-object kan worden gebruikt om basis-crud-operaties uit te voeren, zoals het opslaan, opvragen, bijwerken en verwijderen van entities. Hier is een voorbeeld van het opslaan van een entity met behulp van EntityManager:
 
@@ -39,6 +56,8 @@ const queryBuilder = getRepository(User)
 
 const users = await queryBuilder.getMany();
 ```
+
+> Goed om te weten is dat Entity-manager en getRepository onderdeel zijn van het Data mapper patroon.
 
 Het belangrijkste verschil tussen de entitymanager en repositories is dat de entitymanager verantwoordelijk is voor het beheer van de volledige databasecontext, terwijl repositories zich specifiek richten op het beheer van een bepaalde entiteit. De entitymanager kan worden gebruikt om transacties te beheren en om meerdere repositories tegelijkertijd te gebruiken, terwijl repositories zich richten op de functionaliteit die specifiek is voor de entiteit die ze vertegenwoordigen.
 
