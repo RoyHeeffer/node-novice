@@ -89,3 +89,7 @@ myapp/
 
 Er zijn dus folders bijgekomen in **database** voor migration-bestanden en voor seeders, daarnaast het config bestand.
 Nu is Knex.js geïnstalleerd, geconfigureerd en is de folderstructuur opgezet. Je kunt nu aan de slag met het uitvoeren van migraties en het creëren van seeds.
+
+Lees hier meer over de [configfile] in Knex.
+
+[configfile]: https://knexjs.org/guide/migrations.html#migration-api

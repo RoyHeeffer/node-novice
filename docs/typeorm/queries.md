@@ -10,7 +10,7 @@ Er zijn twee populaire ORM patterns voor queries naar de database: `Active Recor
 
 Het belangrijkste verschil tussen deze patronen is de manier waarop entiteiten omgaan met hun persistente gegevens. In het **Active Record patroon** heeft elke entiteit zijn eigen methoden om te communiceren met de database(Hiervoor moet de Entity BaseEntity extenden!), terwijl in een **Data Mapper patroon** de entiteiten losstaan van de database en heeft de mapper deze taak.
 
-Als je applicatie eenvoudig is en je snel en gemakkelijk gegevens wilt ophalen, bewerken en opslaan, dan is Active Record een goede keuze. Als je daarentegen een grotere en complexere applicatie hebt waarbij het belangrijk is om de database en de entiteiten gescheiden te houden, is Data Mapper de betere keuze. Lees meer over deze patterns in de [docs]
+Als je applicatie eenvoudig is en je snel en gemakkelijk gegevens wilt ophalen, bewerken en opslaan, dan is Active Record een goede keuze. Als je daarentegen een grotere en complexere applicatie hebt waarbij het belangrijk is om de database en de entiteiten gescheiden te houden, is Data Mapper de betere keuze. Lees meer over deze patterns in de [docs].
 
 TypeORM ondersteunt beide patronen en geeft je de vrijheid om te kiezen welk patroon het beste past bij jouw applicatie.
 

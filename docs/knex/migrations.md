@@ -139,3 +139,7 @@ export async function down(knex: Knex): Promise<void> {
   return knex.schema.dropTableIfExists("users");
 }
 ```
+
+Lees hier meer over de [migration api] in Knex.
+
+[migration api]: https://knexjs.org/guide/migrations.html#migration-api

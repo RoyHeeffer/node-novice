@@ -89,3 +89,7 @@ await connection.transaction(async (transactionalEntityManager) => {
 ```
 
 De gebruikte methoden in TypeORM voor het uitvoeren van queries en operaties op de database zijn vergelijkbaar met deze in Laravel.
+
+Lees hier meer over [transactions] in TypeORM.
+
+[transactions]: https://typeorm.io/transactions

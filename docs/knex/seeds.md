@@ -148,3 +148,7 @@ exports.seed = function (knex) {
     });
 };
 ```
+
+Lees hier meer over de [seed api] in Knex.
+
+[seed api]: https://knexjs.org/guide/migrations.html#seed-api

@@ -105,3 +105,7 @@ export default router;
 ```
 
 In dit voorbeeld, is er een UserController met twee methodes: `getAllUsers` en `createUser`. Deze methodes worden gebruikt als de callback-functies voor de get en post routes voor de `'/users'` pad.
+
+Bekijk voorbeelden voor meer informatie over [controllers].
+
+[controllers]: hhttps://expressjs.com/en/starter/faq.html#how-should-i-structure-my-application

@@ -56,3 +56,7 @@ app.get("/users/:username", authMiddleware, (req: Request, res: Response) => {
 
 Er kunnen op deze manier ook **meerdere middleware functies** meegegeven worden aand specifieke routes, de callback word altijd als **laatst verwacht**.
 Dit zijn slechts enkele van de vele mogelijkheden die Express.js biedt voor het maken van web-applicaties. Je kunt deze basis gebruiken en het uitbreiden met meer routes, functies en middleware om aan jouw specifieke vereisten te voldoen.
+
+Lees hier meer over [middleware] functies in Express.
+
+[middleware]: https://expressjs.com/en/guide/using-middleware.html
