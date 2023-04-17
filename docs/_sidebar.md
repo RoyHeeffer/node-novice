@@ -5,7 +5,7 @@
 
 - ExpressJs basics
 
-  - [Introductie ExpressJS](express/intro.md)
+  - [Introductie ExpressJs](express/intro.md)
   - [Installatie en folderstructuur](express/install.md)
   - [Routing](express/routing.md)
   - [Controllers](express/controllers.md)
