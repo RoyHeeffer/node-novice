@@ -13,7 +13,7 @@ const loggerMiddleware = (req: Request, res: Response, next: NextFunction) => {
   next();
 };
 
-// Use middleware
+// Use global middleware
 app.use(loggerMiddleware);
 ```
 
@@ -45,7 +45,7 @@ class LoggerMiddleware
 
 ## Specifieke routes targeten
 
-Je kunt ook gebruik maken van route targeted middleware functies in express.js, deze middleware kun je toevoegen aan een route door het als een derde argument mee te geven aan de route-definitie(overloading), zoals hieronder:
+Je kunt ook gebruik maken van route targeted middleware functies in express.js, deze middleware kun je toevoegen aan een route door het als een tweede argument mee te geven aan de route-definitie(overloading), zoals hieronder:
 
 ```javascript
 app.get("/users/:username", authMiddleware, (req: Request, res: Response) => {
@@ -54,4 +54,5 @@ app.get("/users/:username", authMiddleware, (req: Request, res: Response) => {
 });
 ```
 
+Er kunnen op deze manier ook **meerdere middleware functies** meegegeven worden aand specifieke routes, de callback word altijd als **laatst verwacht**.
 Dit zijn slechts enkele van de vele mogelijkheden die Express.js biedt voor het maken van web-applicaties. Je kunt deze basis gebruiken en het uitbreiden met meer routes, functies en middleware om aan jouw specifieke vereisten te voldoen.

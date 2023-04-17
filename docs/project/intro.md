@@ -14,6 +14,7 @@ Na afronding van dit project, zal je de volgende doelstellingen bereikt hebben:
 
 - Begrip van hoe een server opgezet kan worden met Express.js.
 - Inzicht in het werken met databases met behulp van TypeORM.
+- Kennis van het werken met Typescript.
 - Kennis van het werken met EJS-templates.
 - Ervaring met het bouwen van een eenvoudige blog-applicatie.
 - Begrip van hoe Node.js kan worden gebruikt als alternatief voor PHP.

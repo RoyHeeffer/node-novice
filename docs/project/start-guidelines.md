@@ -20,7 +20,7 @@ De blog-applicatie moet aan de volgende voorwaarden voldoen:
 **1**: Installeer Node.js en NPM
 Voordat je begint, zorg ervoor dat je Node.js en NPM hebt geïnstalleerd op je computer. Je kunt de nieuwste versie downloaden van de officiële [Node.js-website].
 
-**2**: Installeer de benodigde dependencies voor de blogapplicatie met het command `npm install express cors bcrypt jsonwebtoken typeorm mysql2`. Dit installeert de Express.js webframework, CORS, bcrypt voor wachtwoordversleuteling, jsonwebtoken voor authenticatie, TypeORM als ORM en MySQL2 als database driver.
+**2**: Installeer de benodigde dependencies voor de blogapplicatie met het command `npm install express cors ejs bcrypt jsonwebtoken typeorm mysql2`. Dit installeert de Express.js webframework, CORS, bcrypt voor wachtwoordversleuteling, jsonwebtoken voor authenticatie, TypeORM als ORM en MySQL2 als database driver.
 
 **3**:Maak de entiteiten Post en User aan met de properties zoals eerder beschreven(Dit is een tip, je bent vrij je entities te noemen zoals je wilt). Je kunt TypeORM gebruiken om de entiteiten aan te maken en te koppelen aan de MySQL-database.
 
