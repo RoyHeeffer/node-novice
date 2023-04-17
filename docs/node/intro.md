@@ -15,7 +15,7 @@ Hier zijn een paar best use cases voor Node.js:
 
 ## Waar is het minder geschikt voor
 
-Node.js is minder geschikt voor **CPU-intensieve taken**, zoals het uitvoeren van complexe algoritmen, omdat JavaScript een single-threaded taal is. Dit betekent dat Node.js slechts één CPU-kern kan gebruiken, in tegenstelling tot multi-threaded talen zoals Python en Java. Er zijn hiervoor oplossingen zoals het gebruik van worker threads, clustering en het asynchroon uitvoeren van taken, maar over het algemeen als de taak te CPU-intensief is, is het beter om een andere taal te gebruiken die meer geschikt is hiervoor.
+Node.js is minder geschikt voor **CPU-intensieve taken**, zoals het uitvoeren van complexe algoritmen, omdat JavaScript een single-threaded taal is. Dit betekent dat Node.js slechts één CPU-kern kan gebruiken, in tegenstelling tot multi-threaded talen zoals Python en Java. Er zijn hiervoor oplossingen zoals het gebruik van **worker threads, clustering en het asynchroon uitvoeren van taken**, maar over het algemeen als de taak te CPU-intensief is, is het beter om een andere taal te gebruiken die meer geschikt is hiervoor.
 
 Het grote verschil tussen Node.js en PHP is dat Node.js is gebouwd op basis van de V8 JavaScript-engine van Google en PHP is een server-side scripting taal. Node.js is vooral geschikt voor het bouwen van real-time, schaalbare netwerkapplicaties en webapplicaties, terwijl PHP voornamelijk wordt gebruikt voor het bouwen van dynamische websites en webapplicaties.
 

@@ -38,7 +38,7 @@ const requireAuth = (req: Request, res: Response, next: NextFunction) => {
 };
 ```
 
-**checkPostOwnership**: een middleware functie die controleert of de huidige gebruiker een admin is. Deze functie kan bijvoorbeeld worden gebruikt om te controleren of een gebruiker toegang heeft tot bepaalde beheerdersfuncties.
+**checkPostOwnership**: een middleware functie die controleert of de huidige gebruiker eigenaar van de desbtreffende post is. Deze functie kan bijvoorbeeld worden gebruikt om te controleren of een gebruiker toegang heeft tot bepaalde beheerdersfuncties.
 
 ```javascript
 const getUserIdFromToken = (token) => {
@@ -72,6 +72,8 @@ const checkPostOwnership = async (
   }
 };
 ```
+
+In dit voorbeeld gaan we ervan uit dat de JWT token wordt verzonden via de `Authorization` header, in het formaat **"Bearer token"**.
 
 Documentatie [jsonwebtoken] library en [hier] vind je meer over express middleware functies.
 
