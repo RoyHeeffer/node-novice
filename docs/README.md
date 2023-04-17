@@ -29,6 +29,7 @@ Geniet van het curriculum en veel succes hebt met het ontwikkelen van backend-ap
 
 ## Extra informatie
 
+**Curriculum**<br/>
 Naast de theorie en codevoorbeelden bevat het curriculum ook een eindopdracht. De eindopdracht is ontworpen om je te helpen je nieuwe vaardigheden toe te passen en om praktische ervaring op te doen met het ontwikkelen van een backend-applicaties.
 
 Dit curriculum is speciaal ontworpen voor ervaren PHP-developers die hun vaardigheden willen uitbreiden en hun carrièremogelijkheden willen vergroten. Het is ontworpen om praktische vaardigheden te ontwikkelen die onmiddellijk kunnen worden toegepast in een professionele omgeving.
