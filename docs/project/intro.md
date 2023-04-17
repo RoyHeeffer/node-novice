@@ -38,4 +38,9 @@ Je project zal beoordeeld worden op basis van de volgende criteria:
 - De functionaliteit en het ontwerp van de blog-applicatie.
 - De kwaliteit van de documentatie en het vermogen om het project te presenteren en te bespreken.
 
+Maak goed gebruik van [Typescript] types en documenteer eventueel complexe functies met het gebruik van [Jsdoc].
+
 We wensen je veel succes en plezier met dit project!
+
+[typescript]: https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+[jsdoc]: https://jsdoc.app/
