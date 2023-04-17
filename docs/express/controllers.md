@@ -4,7 +4,7 @@
 
 Controllers in Express.js behandelen de logica van een applicatie en fungeren als een brug tussen de route en de rest van de applicatie. Controllers zijn verantwoordelijk voor het verwerken van **Requests** en het terugsturen van **Responses**. Je kunt een controller maken met behulp van **classes** en deze aan de routes toevoegen. Laravel-controllers daarentegen worden gemaakt met behulp van een specifieke klasse en zijn gekoppeld aan routes met behulp van de `Route::controller()` methode.
 
-> Javascript is van origine geen OOP taal, een class in JS is een syntactische uitbreiding op prototypes en functies die de mogelijkheid biedt om object-georiënteerde programmering te implementeren. Access-modifiers als Protected, Private en Public werken hier dus niet.
+> Javascript is van origine geen OOP taal, een class in JS is een syntactische uitbreiding op prototypes en functies die de mogelijkheid biedt om object-georiënteerde programmering te implementeren. in Javascript werken Access-modifiers als Protected, Private en Public dus eigenlijk niet. Typescript leest deze modifiers wel en geeft daarom errors, maar in theorie zou je alles alszijnde static kunnen gebruiken
 
 Net als bij routing, heeft Express.js een **gedecentraliseerde** aanpak voor controllers in tegenstelling tot Laravel's centraal gestuurde aanpak. In Express, worden controllers gedefinieerd in aparte bestanden of modules.
 
@@ -12,7 +12,7 @@ Een voorbeeld van een Express.js controller zou er als volgt uitzien:
 
 ```javascript
 class UserController {
-  async create(req: Request, res: Response) {
+  public async create(req: Request, res: Response) {
     const user = await User.create({
       name: req.body.name,
       email: req.body.email,
@@ -20,7 +20,7 @@ class UserController {
     res.send(user);
   }
 
-  async update(req: Request, res: Response) {
+  public async update(req: Request, res: Response) {
     const user = await User.findOne({
       where: { id: req.params.id },
     });

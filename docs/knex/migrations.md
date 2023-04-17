@@ -88,6 +88,8 @@ Als je wilt specificeren hoeveel migraties je wilt terugrollen, kun je de `--all
 npx knex migrate:rollback --all
 ```
 
+> Let op, dit zijn de directe commands voor het terugrollen van migrations, hiervoor moet je terminal zich in de database folder bevinden, vanaf root kun je onze aangemaakte scripts uit de vorige sectie kunnen gebruiken.
+
 Dit zal alle migraties ongedaan maken die zijn uitgevoerd sinds het begin van de migratie-geschiedenis.
 
 Houd er rekening mee dat als je een migratie terugrolt, de aanpassingen die zijn gemaakt aan de database zullen worden verwijderd. Het is belangrijk om een backup te maken van de database voordat je migraties terugrolt, zodat je deze informatie niet permanent verliest.
@@ -99,8 +101,10 @@ Met Knex.js kun je meerdere migraties in één batch uitvoeren door de `knex.mig
 Bijvoorbeeld, om alle migraties uit te voeren die nog niet zijn uitgevoerd, kun je de volgende opdracht uitvoeren:
 
 ```bash
-knex migrate:latest
+npx knex migrate:latest
 ```
+
+> Let op, dit is het directe command voor het runnen van migrations, hiervoor moet je terminal zich in de database folder bevinden, vanaf root kun je onze aangemaakte scripts uit de vorige sectie kunnen gebruiken.
 
 Met de **migratie-geschiedenis** kun je beter beheren door ervoor te zorgen dat elke migratie uniek is. Dit kun je bereiken door elke migratie een unieke naam te geven en door een nauwkeurige beschrijving van de migratie op te nemen in het migratiebestand.
 

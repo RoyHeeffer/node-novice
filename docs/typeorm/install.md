@@ -3,23 +3,25 @@
 Je kunt TypeORM gemakkelijk installeren vanuit je terminal met npm of yarn:
 
 ```bash
-npm install typeorm
+npm install typeorm reflect-metadata mysql(of mysql2)
 
 of
 
-yarn add typeorm
+yarn add typeorm reflect-metadata mysql(of mysql2)
 ```
 
 ## Configureren van TypeORM
 
-Nadat TypeORM is geïnstalleerd, kun je het configureren door een nieuw bestand `ormconfig.json` te maken of een bestand `ormconfig.js` te gebruiken. Hieronder vindt je een voorbeeld van de inhoud van een ormconfig.js-bestand:
+Nadat TypeORM is geïnstalleerd, maken we een nieuwe folder **database** aan in de **src-folder**. en kun je TypeORM configureren door een nieuw bestand `ormconfig.json` of `ormconfig.ts` te gebruiken. Hieronder vindt je een voorbeeld van de inhoud van een ormconfig.ts-bestand:
 
 ```javascript
+import 'reflect-metadata';
+const parentDir = join(__dirname, "..");
 
 const connectionOpts: MysqlConnectionOptions = {
   type: "mysql",
   host: process.env.DB_HOST,
-  port: Number(process.env.DB_PORT),
+  port: parseInt(process.env.DB_PORT!),
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
@@ -27,9 +29,9 @@ const connectionOpts: MysqlConnectionOptions = {
   synchronize: false,
   migrationsRun: false, // Migrations are run through Knexjs
   extra: {
-    connectionLimit: lodash.parseInt(process.env.DB_CONNECTION_LIMIT!),
+    connectionLimit: parseInt(process.env.DB_CONNECTION_LIMIT!),
   },
-  logger: undefined
+  logger: undefined,
 };
 
 export const AppDataSource = new DataSource(connectionOpts);
@@ -38,10 +40,31 @@ export const dbConnection = async () => {
   await AppDataSource.initialize();
 };
 
-
 ```
 
 In dit voorbeeld gebruiken we een **MySQL-database**, maar je kunt ook andere database typen gebruiken, zoals PostgreSQL, MSSQL, SQLite en Oracle en is is ondersteuning voor no sql databases als MongoDb.
+
+In **app.ts** roepen we nu de functie aan om de database connectie te leggen:
+
+```javascript
+app.listen(port, async () => {
+  // Start database connection
+  await dbConnection();
+
+  console.log(`App listening on port ${port}`);
+});
+```
+
+In onze **tsconfig.json** voegen we de volgende opties toe:
+
+```json
+"compilerOptions": {
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
+  // Other options..
+}
+
+```
 
 > ##### Vergelijkingen met Laravel
 >
@@ -57,6 +80,8 @@ myapp/
 │ ├── app.ts
 │ ├── controllers/
 │ │   └── mainController.ts
+│ ├── database/
+│ │   └── ormconfig.ts
 │ ├── entities/
 │ │   └── User.entity.ts
 │ ├── middleware/
@@ -67,7 +92,6 @@ myapp/
 │ │   └── mainRoutes.ts
 │ └── views/
 │     └── home.ejs
-├── ormconfig.json
 ├── package.json
 ├── tsconfig.json
 ```

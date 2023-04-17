@@ -26,4 +26,5 @@
   - [Opdracht](project/intro.md)
   - [Start guidelines](project/start-guidelines.md)
   - [Helpers](project/helpers.md)
-  - [EJS-templates](project/helpers.md)
+  - [EJS-templates](project/EJS-templates.md)
+  - [Assessment](project/assessment.md)

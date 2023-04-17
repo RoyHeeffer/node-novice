@@ -10,22 +10,19 @@ npm install knex
 
 ## Configureren
 
-Maak een knexfile.js-bestand aan en zet deze in een nieuwe folder genaamd **db** in de **src-folder** van je project en zet de volgende code uit om een basisconfiguratie in te stellen:
+Maak een knexfile.ts-bestand aan in de nieuwe folder genaamd **database** van je project en zet de volgende code uit om een basisconfiguratie in te stellen:
 
 ```javascript
-// knexfile.js
-
-import dotenv from "dotenv";
-import lodash from "lodash";
-
-dotenv.config({ path: "../../.env" });
+// knexfile.ts
 
 const knexConfig = {
   client: "mysql2",
   connection: {
-    database: "my_db",
-    user: "username",
-    password: "password",
+    host: process.env.DB_HOST,
+    port: parseInt(process.env.DB_PORT!),
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
   },
   migrations: {
     tableName: "knex_migrations",
@@ -74,7 +71,8 @@ myapp/
 │ ├── db/
 │ │   ├── migrations/
 │ │   ├── seeds/
-│ │   └── knexfile.js
+│ │   ├── ormconfig.ts
+│ │   └── knexfile.ts
 │ ├── entities/
 │ │   └── User.entity.ts
 │ ├── middleware/
@@ -85,10 +83,9 @@ myapp/
 │ │   └── mainRoutes.ts
 │ └── views/
 │     └── home.ejs
-├── ormconfig.json
 ├── package.json
 ├── tsconfig.json
 ```
 
-Er is dus een folder bijgekomen genaamd **db** met daarin folders voor migration-bestanden en een folder voor seeders, daarnaast het config bestand.
+Er zijn dus folders bijgekomen in **database** voor migration-bestanden en voor seeders, daarnaast het config bestand.
 Nu is Knex.js geïnstalleerd, geconfigureerd en is de folderstructuur opgezet. Je kunt nu aan de slag met het uitvoeren van migraties en het creëren van seeds.

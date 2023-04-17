@@ -13,6 +13,8 @@ npx knex seed:make seed_users
 
 ```
 
+> Let op, dit is het directe command voor het aanmaken van seeds, hiervoor moet je terminal zich in de database folder bevinden, vanaf root kun je onze aangemaakte scripts uit de vorige sectie kunnen gebruiken.
+
 Dit commando zal een nieuw JavaScript-bestand aanmaken genaamd `seed_users.js` in de /seeds map van ons project.
 
 Een voorbeeld van een seeder file zou er als volgt uitzien:
@@ -51,6 +53,8 @@ Je kunt het seed-bestand uitvoeren met het volgende Knex-command:
 ```sh
 npx knex seed:run
 ```
+
+> Let op, dit is het directe command voor het runnen van seeds, hiervoor moet je terminal zich in de database folder bevinden, vanaf root kun je onze aangemaakte scripts uit de vorige sectie kunnen gebruiken.
 
 Dit zal de seed-functie uitvoeren en de gegevens in de database toevoegen.
 
