@@ -27,7 +27,7 @@ Na afronding van dit project, zal je de volgende doelstellingen bereikt hebben:
 **3**: Maak routes en controllers voor de CRUD-functionaliteit en test ze door middel van postman of een andere tool.
 Voeg eventueel validatie en middleware toe om de functionaliteit van de applicatie uit te breiden.
 
-**Bonus uitdaging**: In deze sectie vind je een hoofdstuk over `EJS-templates`(embedded javascript), er zijn een aantal voorbeelden aangeleverd, gebruik deze om een frontend aan je applicatie te hangen.
+**Bonus uitdaging**: In deze sectie vind je een hoofdstuk over `EJS-templates`(embedded javascript), er zijn een aantal voorbeelden aangeleverd, gebruik deze om een frontend aan je applicatie te hangen, Let op dit is optioneel.
 
 **Beoordeling**: De opdracht wordt beoordeeld op basis van het correct functioneren van de CRUD-functionaliteit, de structuur van de code en de toepassing van Express.js en TypeORM.
 Je project zal beoordeeld worden op basis van de volgende criteria:

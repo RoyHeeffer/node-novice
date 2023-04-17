@@ -25,7 +25,7 @@ app.listen(3000, () => {
 });
 ```
 
-Hier wordt de **view engine** ingesteld op `EJS` en wordt de map waarin de EJS-bestanden zich bevinden ingesteld als de views directory. Vervolgens wordt er een route-handler aangemaakt voor de root van de website en wordt het bestand `index.ejs` gerenderd met de gegeven variabelen title en message. In het EJS-bestand kunnen deze variabelen vervolgens worden gebruikt door ze tussen `<%= %>` tags te plaatsen:
+Hier wordt de **view engine** ingesteld op `EJS` en wordt de map waarin de EJS-bestanden zich bevinden ingesteld als de views directory. Vervolgens wordt er een route-handler aangemaakt voor de root van de website en wordt het bestand `index.ejs` gerenderd met de gegeven variabelen **title** en **message**. In het EJS-bestand kunnen deze variabelen vervolgens worden gebruikt door ze tussen `<%= %>` tags te plaatsen:
 
 ```html
 <!-- views/home.ejs -->
