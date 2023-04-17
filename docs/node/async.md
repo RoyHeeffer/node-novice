@@ -44,7 +44,7 @@ fetchData()
 
 ## Async/await
 
-Async/await is een syntactische suiker bovenop Promises die het schrijven en lezen van async code gemakkelijker maakt. De async-functie wordt gebruikt om aan te geven dat de functie async is en de await-operator wordt gebruikt om te wachten op de voltooiing van een Promise voordat de code wordt voortgezet.
+Async/await is een syntactische uitbreiding bovenop Promises die het schrijven en lezen van async code gemakkelijker maakt. De async-functie wordt gebruikt om aan te geven dat de functie async is en de await-operator wordt gebruikt om te wachten op de voltooiing van een Promise voordat de code wordt voortgezet.
 
 ```javascript
 async function fetchData() {
