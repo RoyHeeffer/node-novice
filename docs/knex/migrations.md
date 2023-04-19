@@ -23,9 +23,11 @@ exports.down = function (knex) {
 };
 ```
 
-**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .alterTable-methode te gebruiken om een bestaande tabel op te halen en vervolgens de tabel aanpassen, aanvullen enzovoort eventueel kun je methodes als `addColumn`, `.dropColumn`, en `.renameColumn` gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Hieronder is een voorbeeld van het toevoegen van een nieuwe column **'bio'** aan de 'users'-tabel:
+**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .alterTable-methode te gebruiken om een bestaande tabel op te halen en vervolgens de tabel aanpassen, aanvullen enzovoort eventueel kun je methodes als `addColumn`, `.dropColumn`, en `.renameColumn` gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Let op, voor het aanpassen van tabellen in de database word altijd een nieuw migratie-bestand met beschrijvende naam aangemaakt, we passen **nooit** migratie-bestanden aan die al zijn doorgevoerd in de **productie-database**. Hieronder is een voorbeeld van het toevoegen van een nieuwe column **'bio'** aan de 'users'-tabel:
 
 ```javascript
+/* /database/migrations/add_bio_column_to_users_table.ts */
+
 exports.up = function (knex) {
   return knex.schema.alterTable("users", function (table) {
     table.text("bio").after("email");
@@ -138,6 +140,6 @@ export async function down(knex: Knex): Promise<void> {
 }
 ```
 
-Lees hier meer over de [migration api] in Knex.
+#### Lees meer
 
-[migration api]: https://knexjs.org/guide/migrations.html#migration-api
+[Migration api](https://knexjs.org/guide/migrations.html#migration-api)

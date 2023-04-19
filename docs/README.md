@@ -6,11 +6,15 @@ Dit curriculum is speciaal ontworpen voor ervaren PHP developers die willen lere
 
 Het curriculum is verdeeld in meerdere cursussen, elk gericht op een specifiek niveau binnen backend-ontwikkeling. Elke cursus heeft een aantal hoofdtopics die diepgaand worden behandeld en aan de hand van codevoorbeelden worden uitgelegd. Naast de theoretische uitleg zijn er ook veel praktische opdrachten om de geleerde concepten in de praktijk te brengen.
 
-Aan het einde van elke cursus is er een eindopdracht, waarin je de geleerde kennis kunt toepassen om een project te bouwen. Na het voltooien van de eindopdracht wordt er een assessment afgenomen om te beoordelen of je de geleerde concepten volledig begrijpt en kunt toepassen.
+Per cursus-sectie passen we de nieuw opgedane kennis steeds toe in een eigen project dat we langzaam uitbouwen tot een volwaardige applicatie. Na het voltooien van de volledige cursus wordt er een assessment afgenomen om te beoordelen of je de geleerde concepten volledig begrijpt en kunt toepassen.
 
 ## Opbouw van de stof
 
-De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen zoals caching en load balancing.
+De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen en gaan we gebruik maken van het cms.
+
+Iedere cursus is verdeeld in een aantal secties met daarin de belangrijkste relevante onderwerpen, aan het eind van ieder onderwerp vind je ook bronnen voor meer informatie over de zojuist behandelde stof.
+
+Aan het eind van een sectie gaan we de behandelde sectie-onderwerpen in de applicatie uitwerken, richtlijnen en applicatie vereisten ga je hier nogmaals terugvinden.
 
 ## Leerdoel curriculum
 

@@ -128,3 +128,7 @@ myapp/
 **tsconfig.json**: Bevat de TypeScript-configuratie-instellingen voor de applicatie.
 
 Dit is slechts een voorbeeld van een folderstructuur en je kunt het aanpassen aan de specifieke vereisten en projectgrootte.
+
+#### Lees meer
+
+- [Express.js setup guides](http://expressjs.com/en/starter/installing.html)

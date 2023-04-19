@@ -100,7 +100,7 @@ export class ChildEntity extends BaseEntity {
 }
 ```
 
-In dit voorbeeld wordt de parent entity gedefinieerd met een primary key `id` en een kolom `name`. De One-To-Many relatie tussen de parent en child entities wordt gedefinieerd door het gebruik van de `@OneToMany` decorator op de parent entity en de `@ManyToOne` decorator op de child entity. Hierdoor worden de children en parent eigenschappen op de entities aangemaakt. Lees meer over [relations]
+In dit voorbeeld wordt de parent entity gedefinieerd met een primary key `id` en een kolom `name`. De One-To-Many relatie tussen de parent en child entities wordt gedefinieerd door het gebruik van de `@OneToMany` decorator op de parent entity en de `@ManyToOne` decorator op de child entity. Hierdoor worden de children en parent eigenschappen op de entities aangemaakt.
 
 > Hier hebben we @OneToMany toegevoegd aan de property children en het relatietype gespecificeerd als ChildEntity array. Je kunt `@JoinColumn` eventueel weglaten in een @ManyToOne / @OneToMany-relatie. @OneToMany kan niet bestaan zonder @ManyToOne. Als je @OneToMany wilt gebruiken, is @ManyToOne vereist. Het omgekeerde is echter niet vereist: als je alleen geïnteresseerd bent in de @ManyToOne-relatie, kun je deze definiëren zonder @OneToMany op de gerelateerde entiteit.
 
@@ -131,7 +131,7 @@ class Child extends Model
 
 In dit voorbeeld wordt de relatie tussen de parent en child entities gedefinieerd door de children functie te definiëren op de Parent model en de parent relatie door de parent functie te definiëren op de Child model.
 
-Lees hier meer over [entities] in TypeORM.
+#### Lees meer
 
-[entities]: https://typeorm.io/entities
-[relations]: https://typeorm.io/relations
+- [Entities](ttps://typeorm.io/entities)
+- [Relations](ttps://typeorm.io/relations)

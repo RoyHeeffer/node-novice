@@ -59,8 +59,8 @@ async function fetchData() {
 
 Async programmeertechnieken kunnen de prestaties en efficiëntie van Node.js-toepassingen aanzienlijk verbeteren en het mogelijk maken om gelijktijdige taken uit te voeren zonder de responsiviteit van de toepassing te verminderen. Het is dus van groot belang om deze technieken te beheersen.
 
-Lees hier meer over [async functies].
-
 > Let hierbij goed op het gebruik van error handling(catch, try/catch blok)
 
-[async functies]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+#### Lees meer.
+
+- [Async functies in javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)

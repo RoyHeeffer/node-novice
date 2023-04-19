@@ -1,5 +1,7 @@
 # Introductie ExpressJs
 
+> Vanaf deze sectie zullen we beginnen met het bouwen van de applicatie om de kennis die we hebben opgedaan in praktijk te brengen.
+
 ## Kort overzicht
 
 Express.js is een open source minimalistisch server-side JavaScript framework dat is gericht op het snel en eenvoudig opzetten van web-applicaties. Het framework is gebaseerd op Node.js en is vrij snel en flexibel in vergelijking met andere back-end frameworks.
@@ -64,6 +66,7 @@ app.listen(port, () => {
 
 Deze functies vormen de basis van elke Express.js-applicatie. Het is belangrijk om te begrijpen hoe deze functies werken en hoe ze samenwerken om jouw Express-applicatie aan te sturen.
 
-Bekijk ook de [docs] voor meer informatie over deze functies.
+#### Lees meer
 
-[docs]: https://expressjs.com/en
+- [Express.js website](http://expressjs.com/)
+- [Core functionaliteit](http://expressjs.com/en/5x/api.html#app.get)

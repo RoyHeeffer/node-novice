@@ -98,6 +98,6 @@ myapp/
 
 Er is dus nu in de **rootfolder** een config bestand bijgekomen en vanaf nu definiëren we de **Entities** die TypeORM gebruikt in de desbetreffende **entitiesfolder**.
 
-Lees hier meer over [TypeORM opzetten] in Express.
+#### Lees meer
 
-[typeorm opzetten]: https://typeorm.io/example-with-express
+- [Typeorm opzetten](https://typeorm.io/example-with-express)

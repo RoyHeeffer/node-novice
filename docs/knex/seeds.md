@@ -149,6 +149,6 @@ exports.seed = function (knex) {
 };
 ```
 
-Lees hier meer over de [seed api] in Knex.
+#### Lees meer
 
-[seed api]: https://knexjs.org/guide/migrations.html#seed-api
+[Seed api](https://knexjs.org/guide/migrations.html#seed-api)

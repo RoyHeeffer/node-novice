@@ -10,11 +10,9 @@ Er zijn twee populaire ORM patterns voor queries naar de database: `Active Recor
 
 Het belangrijkste verschil tussen deze patronen is de manier waarop entiteiten omgaan met hun persistente gegevens. In het **Active Record patroon** heeft elke entiteit zijn eigen methoden om te communiceren met de database(Hiervoor moet de Entity BaseEntity extenden!), terwijl in een **Data Mapper patroon** de entiteiten losstaan van de database en heeft de mapper deze taak.
 
-Als je applicatie eenvoudig is en je snel en gemakkelijk gegevens wilt ophalen, bewerken en opslaan, dan is Active Record een goede keuze. Als je daarentegen een grotere en complexere applicatie hebt waarbij het belangrijk is om de database en de entiteiten gescheiden te houden, is Data Mapper de betere keuze. Lees meer over deze patterns in de [docs].
+Als je applicatie eenvoudig is en je snel en gemakkelijk gegevens wilt ophalen, bewerken en opslaan, dan is Active Record een goede keuze. Als je daarentegen een grotere en complexere applicatie hebt waarbij het belangrijk is om de database en de entiteiten gescheiden te houden, is Data Mapper de betere keuze.
 
 TypeORM ondersteunt beide patronen en geeft je de vrijheid om te kiezen welk patroon het beste past bij jouw applicatie.
-
-[docs]: https://typeorm.io/active-record-data-mapper
 
 **Active Records**: In Active Record implementeert elk model de basis CRUD-operaties (Create, Read, Update, Delete), en het maakt gebruik van de metadata van het model om automatisch query's op te stellen en op te halen.
 Hier zijn een aantal voorbeelden:
@@ -123,3 +121,11 @@ const user = await userRepository.findByEmail("voorbeeld@email.com");
 ```
 
 In dit voorbeeld creëren we een **repository voor de User-entiteit**. We extenden de `Repository-class` en geven de User-entiteit mee als argument. Hierdoor krijgen we toegang tot de basis-methoden van de Repository-klasse en kunnen we specifieke methoden voor onze User-entiteit implementeren, zoals de `findByEmail` methode in dit voorbeeld.
+
+#### Lees meer
+
+- [Active Record vs Datamapper](https://typeorm.io/active-record-data-mapper)
+- [EntityManager](https://typeorm.io/working-with-entity-manager)
+- [Querybuilder](https://typeorm.io/select-query-builder)
+- [Querybuilder](https://typeorm.io/select-query-builder)
+- [Custom Repositories](https://typeorm.io/custom-repository)

@@ -21,6 +21,6 @@ Het grote verschil tussen Node.js en PHP is dat Node.js is gebouwd op basis van 
 
 Het beste gebruik van Node.js hangt af van de specifieke vereisten van het project. Als real-time functionaliteit of schaalbaarheid belangrijk zijn, kan Node.js een goede keuze zijn. Als het gaat om het bouwen van een dynamische website of webapplicatie met een traditionele server-side taal zoals PHP, kan het beter zijn om deze talen te gebruiken.
 
-Lees hier meer informatie over [Node.js].
+#### Lees meer
 
-[node.js]: https://nodejs.dev/en/learn/
+- [Node.js](https://nodejs.dev/en/learn/)

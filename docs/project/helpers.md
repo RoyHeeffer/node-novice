@@ -75,7 +75,7 @@ const checkPostOwnership = async (
 
 In dit voorbeeld gaan we ervan uit dat de JWT token wordt verzonden via de `Authorization` header, in het formaat **"Bearer token"**.
 
-Documentatie [jsonwebtoken] library en [hier] vind je meer over express middleware functies.
+#### Lees meer
 
-[jsonwebtoken]: https://github.com/auth0/node-jsonwebtoken
-[hier]: https://expressjs.com/en/guide/using-middleware.html
+- [Jsonwebtoken website](https://github.com/auth0/node-jsonwebtoken)
+- [Middleware functies](https://expressjs.com/en/guide/using-middleware.html)
