@@ -68,7 +68,7 @@ myapp/
 │ ├── app.ts
 │ ├── controllers/
 │ │   └── mainController.ts
-│ ├── db/
+│ ├── database/
 │ │   ├── migrations/
 │ │   ├── seeds/
 │ │   ├── ormconfig.ts
