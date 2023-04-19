@@ -12,13 +12,13 @@ Aan het einde van elke cursus is er een eindopdracht, waarin je de geleerde kenn
 
 De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen zoals caching en load balancing.
 
-## Leerdoel
+## Leerdoel curriculum
 
-Het doel van dit curriculum is om ervaren PHP-ontwikkelaars op te leiden tot volwaardige backend-ontwikkelaars met behulp van Node.js, Express.js en TypeORM. Na het voltooien van dit curriculum ben je in staat om een backend van een applicatie te ontwerpen, te ontwikkelen en te beheren, waarbij je gebruikmaakt van de nieuwste technologieën en best practices.
+Het doel van dit curriculum is om ervaren PHP-ontwikkelaars op te leiden tot volwaardige backend-ontwikkelaars met behulp van Node.js, Express.js en TypeORM. Na het voltooien van dit curriculum ben je in staat om een backend van een applicatie te ontwerpen, te ontwikkelen en te beheren, waarbij je gebruikmaakt van de nieuwste technologieën en best practices. Het totale curriculum is opgesplitst in 3 cursussen(**Novice, Advanced, Expert**) die steeds verdere verdieping geven aan de opgedane kennis uit voorgaande cursussen.
 
-## Leerdoelen
+## Leerdoelen cursus - Novice
 
-Na afronding van dit curriculum heb je:
+Na afronding van deze cursus heb je:
 
 - Een grondig begrip van de fundamenten van Node.js, Express.js en TypeORM
 - Ervaring met het werken met TypeORM-entiteiten, repositories, queries en transacties

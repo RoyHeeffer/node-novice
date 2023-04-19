@@ -23,20 +23,18 @@ exports.down = function (knex) {
 };
 ```
 
-**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .table-methode te gebruiken om een bestaande tabel op te halen en vervolgens de tabel aanpassen, aanvullen enzovoort eventueel kun je de `addColumn`, `.dropColumn`, en `.renameColumn` methoden te gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Hieronder is een voorbeeld van het toevoegen van een nieuwe column **'bio'** aan de 'users'-tabel:
+**Bijwerken van tabellen:** Je kunt tabellen bijwerken door de .alterTable-methode te gebruiken om een bestaande tabel op te halen en vervolgens de tabel aanpassen, aanvullen enzovoort eventueel kun je methodes als `addColumn`, `.dropColumn`, en `.renameColumn` gebruiken om velden toe te voegen, te verwijderen en te hernoemen. Hieronder is een voorbeeld van het toevoegen van een nieuwe column **'bio'** aan de 'users'-tabel:
 
 ```javascript
 exports.up = function (knex) {
-  return knex.schema.table("users", (table) => {
-    table.text("bio");
-    table.string("email").alter();
+  return knex.schema.alterTable("users", function (table) {
+    table.text("bio").after("email");
   });
 };
 
 exports.down = function (knex) {
-  return knex.schema.table("users", (table) => {
+  return knex.schema.alterTable("users", function (table) {
     table.dropColumn("bio");
-    table.string("email").notNullable().alter();
   });
 };
 ```
