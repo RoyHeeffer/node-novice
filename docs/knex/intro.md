@@ -13,3 +13,7 @@ Om Knex.js in jouw project te integreren, moet je de knex-library installeren en
 In het kort biedt Knex.js een eenvoudige en flexibele oplossing voor het beheren van database-queries, die ondersteuning biedt voor verschillende databases en je de mogelijkheid biedt om eenvoudig schema's te beheren en te onderhouden.
 
 > Knex.js bied dus eigenlijk dezelfde db query en migratie functionaliteit die TypeORM heeft, maar we gebruiken in onze projecten enkel de migration-tools
+
+#### Lees meer
+
+- [Knex.js website](https://knexjs.org/)

@@ -1,6 +1,6 @@
 # EJS-templates
 
-Embedded JavaScript, of EJS, is een template-engine voor Node.js die het mogelijk maakt om dynamische HTML-pagina's te genereren. Het werkt door het insluiten van JavaScript-code in HTML-bestanden. Lees hier meer over in de [docs].
+Embedded JavaScript, of EJS, is een template-engine voor Node.js die het mogelijk maakt om dynamische HTML-pagina's te genereren. Het werkt door het insluiten van JavaScript-code in HTML-bestanden. Omdat **template engines** niet onderdeel zijn van het primair doel van de cursus, vind je hieronder wat starter-uitwerkingen(Je bent vrij deze te gebruiken en aan te passen naar eigen inzicht).
 
 ## Kort voorbeeld
 
@@ -153,4 +153,6 @@ Hieronder vind je wat simpele, niet gestylde templates om je snel op weg te help
 `
 ```
 
-[docs]: https://ejs.co/#docs
+#### Lees meer
+
+- [EJS website](https://ejs.co/#docs)

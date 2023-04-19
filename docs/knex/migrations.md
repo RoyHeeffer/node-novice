@@ -138,6 +138,6 @@ export async function down(knex: Knex): Promise<void> {
 }
 ```
 
-Lees hier meer over de [migration api] in Knex.
+#### Lees meer
 
-[migration api]: https://knexjs.org/guide/migrations.html#migration-api
+[Migration api](https://knexjs.org/guide/migrations.html#migration-api)

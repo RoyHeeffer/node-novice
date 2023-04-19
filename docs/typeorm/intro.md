@@ -5,3 +5,7 @@ TypeORM is een Object Relational Mapping (ORM) library voor Node.js die een verg
 TypeORM bevat onder andere functies voor het opzetten van database-entities, het uitvoeren van migraties en het beheren van database-relaties. Hierdoor kun je concentreren op jouw toepassingslogica en hoef je je zich geen zorgen te maken over de database-infrastructuur. Het biedt ook ondersteuning voor transactions, caching en het uitvoeren van geavanceerde SQL-query's.
 
 In veel opzichten lijkt TypeORM op Laravel's Eloquent ORM, dus als je vertrouwd bent met deze library, zou je je snel op je gemak moeten voelen bij het werken met TypeORM. Het biedt echter ook unieke mogelijkheden voor Node.js-developers en is een uitstekende keuze voor iedereen die op zoek is naar een krachtige en veelzijdige ORM voor zijn of haar Node.js-applicaties.
+
+#### Lees meer
+
+- [TypeORM website](https://typeorm.io/)

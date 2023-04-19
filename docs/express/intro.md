@@ -64,6 +64,7 @@ app.listen(port, () => {
 
 Deze functies vormen de basis van elke Express.js-applicatie. Het is belangrijk om te begrijpen hoe deze functies werken en hoe ze samenwerken om jouw Express-applicatie aan te sturen.
 
-Bekijk ook de [docs] voor meer informatie over deze functies.
+#### Lees meer
 
-[docs]: https://expressjs.com/en
+- [Express.js website](http://expressjs.com/)
+- [Core functionaliteit](http://expressjs.com/en/5x/api.html#app.get)
