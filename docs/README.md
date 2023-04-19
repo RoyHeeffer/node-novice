@@ -10,7 +10,11 @@ Per cursus-sectie passen we de nieuw opgedane kennis steeds toe in een project d
 
 ## Opbouw van de stof
 
-De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen zoals caching en load balancing.
+De stof is opgebouwd in een logische volgorde, waarbij de nadruk ligt op het bouwen van een volledige backend van een applicatie. In de eerste cursus wordt er aandacht besteed aan de basisprincipes van Node.js, Express.js en TypeORM. Vervolgens worden er verschillende databasemanagementtechnieken behandeld, zoals het gebruik van relationele databases en het schrijven van queries. Daarna komen onderwerpen als API-ontwerp en -ontwikkeling, authenticatie en autorisatie aan bod. De laatste cursus richt zich op geavanceerde onderwerpen en gaan we gebruik maken van het cms.
+
+Iedere cursus is verdeeld in een aantal secties met daarin de belangrijke relevante onderwerpen, aan het eind van ieder onderwerp vind je ook bronnen voor meer informatie over de zojuist behandelde stof.
+
+Aan het eind van een sectie gaan we de sectie-onderwerpen in de applicatie uitwerken, richtlijnen en applicatie vereisten ga je hier nogmaals terugvinden.
 
 ## Leerdoel curriculum
 
