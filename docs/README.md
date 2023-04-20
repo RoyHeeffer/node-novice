@@ -4,9 +4,9 @@ Dit curriculum is speciaal ontworpen voor ervaren PHP developers die willen lere
 
 ## Opzet van het curriculum
 
-Het curriculum is verdeeld in meerdere cursussen, elk gericht op een specifiek niveau binnen backend-ontwikkeling. Elke cursus heeft een aantal hoofdtopics die diepgaand worden behandeld en aan de hand van codevoorbeelden worden uitgelegd. Naast de theoretische uitleg zijn er ook veel praktische opdrachten om de geleerde concepten in de praktijk te brengen.
+Het curriculum is verdeeld in meerdere cursussen, elk gericht op een specifiek niveau binnen backend-ontwikkeling. Elke cursus heeft een aantal hoofdtopics(secties) die diepgaand worden behandeld en aan de hand van codevoorbeelden worden uitgelegd. Naast de theoretische uitleg zijn er ook veel praktische opdrachten om de geleerde concepten in de praktijk te brengen.
 
-Per cursus-sectie passen we de nieuw opgedane kennis steeds toe in een eigen project dat we langzaam uitbouwen tot een volwaardige applicatie. Na het voltooien van de volledige cursus wordt er een assessment afgenomen om te beoordelen of je de geleerde concepten volledig begrijpt en kunt toepassen.
+Aan het einde van iedere cursus-sectie passen de nieuw opgedane kennis steeds toe in een eigen project dat we langzaam uitbouwen tot een volwaardige applicatie. Na het voltooien van de volledige cursus wordt er een assessment afgenomen om te beoordelen of je de geleerde concepten volledig begrijpt en kunt toepassen.
 
 ## Opbouw van de stof
 
