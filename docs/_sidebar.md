@@ -10,6 +10,7 @@
   - [Routing](express/routing.md)
   - [Controllers](express/controllers.md)
   - [Middleware](express/middleware.md)
+  - [Opdracht](express/assignment.md)
 
 * TypeORM basics
 
