@@ -1,6 +1,13 @@
 # Nodejs curriculum - novice
 
-Dit curriculum is speciaal ontworpen voor ervaren PHP developers die willen leren werken met Node.js, Express.js en TypeORM. Het curriculum is volledig gericht op het ontwikkelen van backend-toepassingen en is ontworpen om je te helpen jouw vaardigheden als ontwikkelaar uit te breiden.
+Dit curriculum is speciaal ontworpen voor ervaren developers die willen leren werken met Node.js, Express.js en TypeORM. Het curriculum is volledig gericht op het ontwikkelen van backend-toepassingen en is ontworpen om je te helpen jouw vaardigheden als ontwikkelaar uit te breiden.
+
+In dit curriculum gaan we er van uit dat je minimaal bekend bent met:
+
+- Simpele javascript functies, loops en datastructuren
+- Enviroment variables
+- Request Methods en responses
+- Postman
 
 ## Opzet van het curriculum
 
