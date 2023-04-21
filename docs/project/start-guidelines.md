@@ -20,10 +20,12 @@ De blog-applicatie moet aan de volgende voorwaarden voldoen:
 **1**: Installeer Node.js en NPM
 Voordat je begint, zorg ervoor dat je Node.js en NPM hebt geïnstalleerd op je computer. Je kunt de nieuwste versie downloaden van de officiële [Node.js-website].
 
-**2**: Installeer de benodigde dependencies voor de blogapplicatie met het command `npm install express cors ejs bcrypt jsonwebtoken typeorm mysql2`. Dit installeert de Express.js webframework, CORS, bcrypt voor wachtwoordversleuteling, jsonwebtoken voor authenticatie, TypeORM als ORM en MySQL2 als database driver.
+**2**: Installeer de benodigde dependencies voor de blogapplicatie met het command `npm install express cors ejs bcrypt jsonwebtoken knex typeorm mysql2`. Dit installeert de Express.js webframework, CORS, bcrypt voor wachtwoordversleuteling, jsonwebtoken voor authenticatie, Knex voor migrations, TypeORM als ORM en MySQL2 als database driver.
 
-**3**:Maak de entiteiten Post en User aan met de properties zoals eerder beschreven(Dit is een tip, je bent vrij je entities te noemen zoals je wilt). Je kunt TypeORM gebruiken om de entiteiten aan te maken en te koppelen aan de MySQL-database.
+**3**:Maak de endpoints aan voor het maken, inloggen en beheren van gebruikers en het bekijken, toevoegen, wijzigen en verwijderen van blogposts. Gebruik Express.js om de endpoints aan te maken, op dit punt hebben we nog geen connectie met de database.
 
-**4**:Maak de endpoints aan voor het maken, inloggen en beheren van gebruikers en het bekijken, toevoegen, wijzigen en verwijderen van blogposts. Gebruik Express.js om de endpoints aan te maken en TypeORM om de gegevens in de database te beheren.
+**4**:Maak de migration-files voor Post en User aan met de properties zoals eerder beschreven(Dit is een tip, je bent vrij je entities te noemen zoals je wilt), maak ook seeders aan om de database te vullen met testdata.
+
+**5**:Maak de TypeORM entiteiten Post en User aan met de properties zoals eerder beschreven(Benoem ze in camel-case, gebruik dezelfde benamingen als die in de migrations-files). Je kunt TypeORM gebruiken om de entiteiten aan te maken en te koppelen aan de MySQL-database.
 
 [node.js-website]: https://nodejs.org/en
