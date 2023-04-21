@@ -131,7 +131,50 @@ class Child extends Model
 
 In dit voorbeeld wordt de relatie tussen de parent en child entities gedefinieerd door de children functie te definiëren op de Parent model en de parent relatie door de parent functie te definiëren op de Child model.
 
+## Volledig voorbeeld
+
+Dit is een voorbeeld van een TypeORM Entity class genaamd `Player` die een **"players"**-tabel in de database representeert:
+
+```javascript
+/* /entities/Player.entity.ts */
+
+@Entity("players")
+export default class Player extends BaseEntity {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
+  nickname: string;
+
+  @Column({ name: "external_id" })
+  externalId: string;
+
+  @Column({ name: "profile_image" })
+  profileImage: string;
+
+  @Column({ name: "terms_optin" })
+  termsOptin: boolean;
+
+  @Column({ name: "marketing_optin", nullable: true })
+  marketingOptin: boolean;
+
+  @Column()
+  points: number;
+
+  @CreateDateColumn({ name: "created_at", type: "timestamp" })
+  createdAt: Date;
+
+  @UpdateDateColumn({ name: "updated_at", type: "timestamp" })
+  updatedAt: Date;
+
+  @OneToMany(() => QuizSession, (quizSession) => quizSession.player)
+  quizSessions: QuizSession[];
+}
+```
+
+De `BaseEntity` class wordt geïmporteerd om bepaalde basisfunctionaliteit te bieden, zoals het vinden van records en het opslaan van nieuwe records. Dit voorbeeld bevat ook een aantal extra opties, zoals de naamgeving van de kolommen (met behulp van de **"name"** parameter van de @Column decorator) en het gebruik van **timestamp kolommen**, waarmee ook deze waardes beschikbaar zijn om mee te werken in de applicatie.
+
 #### Lees meer
 
-- [Entities](ttps://typeorm.io/entities)
-- [Relations](ttps://typeorm.io/relations)
+- [Entities](https://typeorm.io/entities)
+- [Relations](https://typeorm.io/relations)

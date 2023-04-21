@@ -12,6 +12,14 @@
   - [Middleware](express/middleware.md)
   - [Opdracht](express/assignment.md)
 
+* KnexJs basics
+
+  - [Introductie KnexJs](knex/intro.md)
+  - [Installatie](knex/install.md)
+  - [Migrations](knex/migrations.md)
+  - [Seeders](knex/seeds.md)
+  - [Opdracht](knex/assignment.md)
+
 * TypeORM basics
 
   - [Introductie TypeORM](typeorm/intro.md)
@@ -19,13 +27,7 @@
   - [Entities](typeorm/entities.md)
   - [Queries](typeorm/queries.md)
   - [Transacties en Batch-operaties](typeorm/transactions.md)
-
-* KnexJs basics
-
-  - [Introductie KnexJs](knex/intro.md)
-  - [Installatie](knex/install.md)
-  - [Migrations](knex/migrations.md)
-  - [Seeders](knex/seeds.md)
+  - [Opdracht](typeorm/assignment.md)
 
 * Project
 

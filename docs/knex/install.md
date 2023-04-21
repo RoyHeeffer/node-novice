@@ -2,7 +2,7 @@
 
 Knex.js is een database-toolkit voor JavaScript die het uitvoeren van database-operaties, zoals het creëren van tabellen en het uitvoeren van migraties, vergemakkelijkt. Hieronder staan de stappen voor het installeren, configureren en instellen van de folderstructuur van Knex.js.
 
-Installeer Knex.js via npm door het volgende commando uit te voeren in de terminal:
+Je installeert Knex.js via npm door het volgende command uit te voeren in de terminal:
 
 ```bash
 npm install knex
@@ -10,7 +10,7 @@ npm install knex
 
 ## Configureren
 
-Maak een knexfile.ts-bestand aan in de nieuwe folder genaamd **database** van je project en zet de volgende code uit om een basisconfiguratie in te stellen:
+Voor het configureren word een `knexfile.ts`-bestand aan gemaakt in een nieuwe folder genaamd **database** van in het project. Een voorbeeld van een basisconfiguratie kan er als volgt uit zien:
 
 ```javascript
 // knexfile.ts
@@ -43,9 +43,9 @@ module.exports = {
 };
 ```
 
-Nu de configuratie is opgezet gaan we een aantal commands aan onze package.json toevoegen, deze zullen we later weer gebruiken in de migrations en seeders secties.
+Nu de configuratie is opgezet gaan we een aantal commands aan onze package.json toevoegen om deze structuur te hanteren, deze zullen we later weer gebruiken in de migrations en seeders secties.
 
-Voeg nu in `package.json` onder de key **scripts** het volgende command toe:
+Voeg in `package.json` onder de key **scripts** het volgende command toe:
 
 ```json
 "scripts": {
@@ -62,6 +62,9 @@ Voeg nu in `package.json` onder de key **scripts** het volgende command toe:
 
 De folder structuur voor je Express.js-applicatie zou er nu dus als volgt uit kunnen zien:
 
+Er zijn dus folders bijgekomen in de **database-folder** voor migration-bestanden en voor seeders, daarnaast het config bestand.
+Nu is Knex.js geïnstalleerd, geconfigureerd en is de folderstructuur opgezet. Je kunt nu aan de slag met het uitvoeren van migraties en het creëren van seeds.
+
 ```
 myapp/
 ├──src/
@@ -71,10 +74,7 @@ myapp/
 │ ├── database/
 │ │   ├── migrations/
 │ │   ├── seeds/
-│ │   ├── ormconfig.ts
 │ │   └── knexfile.ts
-│ ├── entities/
-│ │   └── User.entity.ts
 │ ├── middleware/
 │ │   └── authMiddleware.ts
 │ ├── public/
@@ -86,9 +86,6 @@ myapp/
 ├── package.json
 ├── tsconfig.json
 ```
-
-Er zijn dus folders bijgekomen in **database** voor migration-bestanden en voor seeders, daarnaast het config bestand.
-Nu is Knex.js geïnstalleerd, geconfigureerd en is de folderstructuur opgezet. Je kunt nu aan de slag met het uitvoeren van migraties en het creëren van seeds.
 
 #### Lees meer
 
