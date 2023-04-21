@@ -74,7 +74,7 @@ Deze route maakt een nieuwe post aan en vereist de volgende parameters in het bo
 
 Er moet een geldig JWT-token in de Authorization header worden meegegeven. De nieuwe post wordt aangemaakt en de id van de post wordt geretourneerd.
 
-**PUT** /posts/:id:
+**PUT** /posts/:id :
 Deze route update de post met het gegeven id en vereist de volgende parameters in het body object:
 
 - **title**: de nieuwe titel van de post
@@ -82,7 +82,7 @@ Deze route update de post met het gegeven id en vereist de volgende parameters i
 
 Er moet een geldig JWT-token in de Authorization header worden meegegeven. De post wordt alleen bijgewerkt als de gebruiker die de post heeft aangemaakt overeenkomt met de gebruiker in de JWT-token.
 
-**DELETE** /posts/:id:
+**DELETE** /posts/:id :
 Deze route verwijdert de post met het gegeven id.
 
 Er moet een geldig JWT-token in de Authorization header worden meegegeven. De post wordt alleen verwijderd als de gebruiker die de post heeft aangemaakt overeenkomt met de gebruiker in de JWT-token.
