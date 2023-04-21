@@ -114,20 +114,27 @@ Omdat migraties aanpassingen aanbrengen aan de database, is het belangrijk om al
 
 ## Volledig voorbeeld
 
-Hieronder is een voorbeeld van het aanmaken van een **'users'-tabel**:
+Hieronder is een voorbeeld van het aanmaken van een **'quizzes'-tabel**, let hierbij goed op de gedefineerde relatie met een **'quiz_categories'-tabel**:
 
 ```javascript
 import knex, { Knex } from "knex";
 
 export async function up(knex: Knex): Promise<void> {
-  return knex.schema.createTable("users", (table) => {
+  return knex.schema.createTable("quizzes", (table) => {
     table.increments("id");
-    table.string("name", 500).notNullable();
-    table.string("email", 500).notNullable();
-    table.string("email_lookup", 500).notNullable();
-    table.string("password", 500).notNullable();
-    table.string("remember_token", 500).nullable();
-    table.string("permissions", 500).nullable();
+    table.string("name", 64).notNullable();
+    table.string("image_url", 255).nullable();
+    table.string("title", 64).notNullable();
+    table.string("description", 255).nullable();
+    table.integer("category_id").unsigned().nullable();
+    table
+      .foreign("category_id")
+      .references("id")
+      .inTable("quiz_categories")
+      .onDelete("SET NULL");
+    table.enum("status", ["Draft", "Preview", "Published"]).notNullable();
+    table.timestamp("start_date").defaultTo(knex.fn.now());
+    table.timestamp("end_date").nullable();
     table.timestamp("created_at").defaultTo(knex.fn.now());
     table
       .timestamp("updated_at")
@@ -136,7 +143,7 @@ export async function up(knex: Knex): Promise<void> {
 }
 
 export async function down(knex: Knex): Promise<void> {
-  return knex.schema.dropTableIfExists("users");
+  return knex.schema.dropTableIfExists("quizzes");
 }
 ```
 

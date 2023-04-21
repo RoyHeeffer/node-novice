@@ -12,7 +12,7 @@ yarn add typeorm reflect-metadata mysql(of mysql2)
 
 ## Configureren van TypeORM
 
-Nadat TypeORM is geïnstalleerd, maken we een nieuwe folder **database** aan in de **src-folder**. en kun je TypeORM configureren door een nieuw bestand `ormconfig.json` of `ormconfig.ts` te gebruiken. Hieronder vindt je een voorbeeld van de inhoud van een ormconfig.ts-bestand:
+Nadat TypeORM is geïnstalleerd, maken we een nieuwe bestand aan in de **database-folder**. Hierin kun je TypeORM configureren, dit bestand word meestal `ormconfig.json` of `ormconfig.ts` genoemd. Hieronder vindt je een voorbeeld van de inhoud van een ormconfig.ts-bestand:
 
 ```javascript
 import 'reflect-metadata';
@@ -81,7 +81,10 @@ myapp/
 │ ├── controllers/
 │ │   └── mainController.ts
 │ ├── database/
-│ │   └── ormconfig.ts
+│ │   ├── migrations/
+│ │   ├── seeds/
+│ │   ├── ormconfig.ts
+│ │   └── knexfile.ts
 │ ├── entities/
 │ │   └── User.entity.ts
 │ ├── middleware/
@@ -96,7 +99,7 @@ myapp/
 ├── tsconfig.json
 ```
 
-Er is dus nu in de **rootfolder** een config bestand bijgekomen en vanaf nu definiëren we de **Entities** die TypeORM gebruikt in de desbetreffende **entitiesfolder**.
+Er is dus nu in de **database-folder** een config bestand bijgekomen en vanaf nu definiëren we de **Entities** die TypeORM gebruikt in de desbetreffende **entities-folder**.
 
 #### Lees meer
 

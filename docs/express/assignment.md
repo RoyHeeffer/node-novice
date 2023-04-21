@@ -4,7 +4,7 @@
 
 ## Korte uitleg
 
-Zorg ervoor dat je stap 1 en 2 van de start guidelines hebt voldaan en lees wat er verwacht word in stap 3, hou hierbij ook rekening met de voorgestelde folder structuur uit deze sectie. In deze sectie werken we nog niet met de database, in plaats daarvan maken we voor nu een `database.ts`(Deze vervangen we op een later punt voor een echte database).
+Zorg ervoor dat je **stap 1 en 2** van de start guidelines hebt voldaan en lees wat er verwacht word in **stap 3**, hou hierbij ook rekening met de voorgestelde folder structuur uit deze sectie. In deze sectie werken we nog niet met de database, in plaats daarvan maken we voor nu een `database.ts`(Deze vervangen we op een later punt voor een echte database).
 Creëer een **database.ts** file in de **src** folder, en laat deze twee **object-arrays** exporteren, 1 waar de users worden bijgehouden en 1 voor de posts(Zoals gezegd benoem deze naar eigen inzicht), vul deze beide met een test-data object.
 
 Hieronder een klein voorbeeld:

@@ -7,6 +7,7 @@ In dit curriculum gaan we er van uit dat je minimaal bekend bent met:
 - Simpele javascript functies, loops en datastructuren
 - Enviroment variables
 - Request Methods en responses
+- Een basis begrip van SQL databases, tabellen en relaties
 - Postman
 
 ## Opzet van het curriculum

@@ -26,6 +26,6 @@ Voordat je begint, zorg ervoor dat je Node.js en NPM hebt geïnstalleerd op je c
 
 **4**:Maak de migration-files voor Post en User aan met de properties zoals eerder beschreven(Dit is een tip, je bent vrij je entities te noemen zoals je wilt), maak ook seeders aan om de database te vullen met testdata.
 
-**5**:Maak de TypeORM entiteiten Post en User aan met de properties zoals eerder beschreven(Benoem ze in camel-case, gebruik dezelfde benamingen als die in de migrations-files). Je kunt TypeORM gebruiken om de entiteiten aan te maken en te koppelen aan de MySQL-database.
+**5**:Maak de TypeORM entiteiten Post en User aan met de properties zoals eerder beschreven(Benoem ze in camel-case, gebruik dezelfde benamingen als die in de migrations-files). Je kunt na de TypeORM config opzet TypeORM gebruiken om de entiteiten aan te maken en te koppelen aan de MySQL-database.
 
 [node.js-website]: https://nodejs.org/en

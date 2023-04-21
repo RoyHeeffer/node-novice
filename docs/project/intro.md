@@ -19,14 +19,11 @@ Na afronding van dit project, zal je de volgende doelstellingen bereikt hebben:
 - Ervaring met het bouwen van een eenvoudige blog-applicatie.
 - Begrip van hoe Node.js kan worden gebruikt als alternatief voor PHP.
 
-**Stappen:**
+**Overzicht van wat we gaan doen:**<br/>
 
-**1**: Maak een nieuwe Express.js-applicatie met TypeORM en maak minimaal een `Post` en `User` entity aan als basis voor de applicatie.
-
-**2**: Maak een repository voor deze entity en voeg CRUD-functionaliteit toe, zoals het opslaan, bijwerken, verwijderen en ophalen van gegevens uit de database.
-
-**3**: Maak routes en controllers voor de CRUD-functionaliteit en test ze door middel van postman of een andere tool.
-Voeg eventueel validatie en middleware toe om de functionaliteit van de applicatie uit te breiden.
+- We maken een nieuwe Express.js-applicatie met TypeORM en maak minimaal een `Post` en `User` entity aan als basis voor de applicatie.
+- We maken een repository voor deze entities en voeg CRUD-functionaliteit toe, zoals het opslaan, bijwerken, verwijderen en ophalen van gegevens uit de database.
+- We maken routes en controllers voor de CRUD-functionaliteit(test deze zelf door middel van postman of een andere tool), en voegen validatie en middleware toe om de functionaliteit van de applicatie uit te breiden.
 
 **Bonus uitdaging**: In deze sectie vind je een hoofdstuk over `EJS-templates`(embedded javascript), er zijn een aantal voorbeelden aangeleverd, gebruik deze om een frontend aan je applicatie te hangen, Let op dit is optioneel.
 
