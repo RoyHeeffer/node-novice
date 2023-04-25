@@ -19,7 +19,7 @@ Node.js is minder geschikt voor **CPU-intensieve taken**, zoals het uitvoeren va
 
 Het grote verschil tussen Node.js en PHP is dat Node.js is gebouwd op basis van de V8 JavaScript-engine van Google en PHP is een server-side scripting taal. Node.js is vooral geschikt voor het bouwen van real-time, schaalbare netwerkapplicaties en webapplicaties, terwijl PHP voornamelijk wordt gebruikt voor het bouwen van dynamische websites en webapplicaties.
 
-Het beste gebruik van Node.js hangt af van de specifieke vereisten van het project. Als real-time functionaliteit of schaalbaarheid belangrijk zijn, kan Node.js een goede keuze zijn. Als het gaat om het bouwen van een dynamische website of webapplicatie met een traditionele server-side taal zoals PHP, kan het beter zijn om deze talen te gebruiken.
+Het beste gebruik van Node.js hangt af van de specifieke vereisten van het project. Als real-time functionaliteit of schaalbaarheid belangrijk zijn, kan Node.js een goede keuze zijn. Als het gaat om het bouwen van een dynamische website of webapplicatie, kan het beter zijn om met een traditionele server-side taal zoals PHP te werken.
 
 #### Lees meer
 

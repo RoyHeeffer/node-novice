@@ -1,6 +1,6 @@
 # Async programmeertechnieken
 
-Node.js is gebouwd rond een asynchroon, non-blocking I/O-model, wat betekent dat het kan omgaan met vele gelijktijdige verbindingen en verzoeken zonder de prestaties te verminderen. Om dit te bereiken, gebruikt Node.js async Javascript programmeertechnieken zoals **callbacks, Promises en async/await**.
+Node.js is gebouwd rond een asynchroon, non-blocking I/O-model, wat betekent dat het kan omgaan met vele gelijktijdige verbindingen en verzoeken zonder de prestaties te verminderen. Om dit te bereiken, gebruikt Node.js async Javascript programmeertechnieken zoals **callbacks, Promises en async/await**. Hieronder vind je voorbeelden van de async functionaliteit die Node.js bied.
 
 ## Callbacks
 
