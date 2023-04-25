@@ -117,7 +117,7 @@ myapp/
 
 **models/**: Dit is de map waarin je jouw datamodellen opslaat. Modellen zijn objecten die jouw applicatie gebruikt om gegevens op te slaan, bij te werken en te verwijderen.
 
-**public/**: Dit is de map waarin je jouw statische bestanden opslaat, zoals CSS- en client-side JavaScript-bestanden.
+**public/**: Dit is de map waarin je jouw statische bestanden opslaat, zoals CSS- en (client-side) JavaScript-bestanden.
 
 **routes/**: Dit is de map waarin je jouw routes opslaat. Routes zijn de paden waarlangs gebruikers jouw applicatie kunnen benaderen en de bijbehorende functies die worden uitgevoerd als een gebruiker een specifiek pad bezoekt.
 
