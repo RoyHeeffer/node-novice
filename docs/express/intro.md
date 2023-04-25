@@ -38,7 +38,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 ```
 
-`app.use()`: Deze functie wordt gebruikt om middleware toe te voegen aan jouw Express-applicatie. Hier is een voorbeeld van het toevoegen van de **body-parser middleware** aan jouw applicatie:
+`app.use()`: Deze functie wordt gebruikt om middleware toe te voegen aan jouw Express-applicatie. Hier is een voorbeeld van het toevoegen van de **body-parser middleware** aan een applicatie:
 
 ```javascript
 import express from "express";

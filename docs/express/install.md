@@ -82,7 +82,7 @@ npm run dev
 ```
 
 Ga naar http://localhost:3000 in een webbrowser en je zult **"Hello World!"** zien.
-Met deze stappen heeft je een eenvoudige Express.js-applicatie opgezet. Je kunt deze nu uitbreiden door een folderstructuur op te zetten en hieraan je routes, controllers en middleware toe te voegen.
+Met deze stappen heb je een eenvoudige Express.js-applicatie opgezet. Je kunt deze nu uitbreiden door een folderstructuur op te zetten en hieraan je routes, controllers en middleware toe te voegen.
 
 ## Folderstructuur
 
@@ -117,13 +117,13 @@ myapp/
 
 **models/**: Dit is de map waarin je jouw datamodellen opslaat. Modellen zijn objecten die jouw applicatie gebruikt om gegevens op te slaan, bij te werken en te verwijderen.
 
-**public/**: Dit is de map waarin je jouw statische bestanden opslaat, zoals CSS- en JavaScript-bestanden.
+**public/**: Dit is de map waarin je jouw statische bestanden opslaat, zoals CSS- en client-side JavaScript-bestanden.
 
 **routes/**: Dit is de map waarin je jouw routes opslaat. Routes zijn de paden waarlangs gebruikers jouw applicatie kunnen benaderen en de bijbehorende functies die worden uitgevoerd als een gebruiker een specifiek pad bezoekt.
 
 **views/**: Dit is de map waarin je jouw view-templates opslaat. De templates zijn bestanden die jouw applicatie gebruikt om dynamische HTML-pagina's te renderen.
 
-**package.json**: Bevat informatie over de npm-pakketten die nodig zijn voor de applicatie.
+**package.json**: Bevat informatie over de npm-packages die nodig zijn voor de applicatie.
 
 **tsconfig.json**: Bevat de TypeScript-configuratie-instellingen voor de applicatie.
 
