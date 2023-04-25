@@ -26,7 +26,7 @@ Aan het eind van een sectie gaan we de behandelde sectie-onderwerpen in de appli
 
 ## Leerdoel curriculum
 
-Het doel van dit curriculum is om ervaren PHP-ontwikkelaars op te leiden tot volwaardige backend-ontwikkelaars met behulp van Node.js, Express.js en TypeORM. Na het voltooien van dit curriculum ben je in staat om een backend van een applicatie te ontwerpen, te ontwikkelen en te beheren, waarbij je gebruikmaakt van de nieuwste technologieën en best practices. Het totale curriculum is opgesplitst in 3 cursussen(**Novice, Advanced, Expert**) die steeds verdere verdieping geven aan de opgedane kennis uit voorgaande cursussen.
+Het doel van dit curriculum is om ervaren developers op te leiden tot volwaardige backend-developer met diepgaande kennis van Node.js, Express.js en TypeORM. Na het voltooien van dit curriculum ben je in staat om een backend van een applicatie te ontwerpen, te ontwikkelen en te beheren, waarbij je gebruikmaakt van de nieuwste technologieën en best practices. Het totale curriculum is opgesplitst in 3 cursussen(**Novice, Advanced, Expert**) die steeds verdere verdieping geven aan de opgedane kennis uit voorgaande cursussen.
 
 ## Leerdoelen cursus - Novice
 
@@ -43,4 +43,4 @@ Geniet van het curriculum en veel succes hebt met het ontwikkelen van backend-ap
 
 Naast de theorie en codevoorbeelden bevat het curriculum ook een eindopdracht. De eindopdracht is ontworpen om je te helpen je nieuwe vaardigheden toe te passen en om praktische ervaring op te doen met het ontwikkelen van een backend-applicaties.
 
-Dit curriculum is speciaal ontworpen voor ervaren PHP-developers die hun vaardigheden willen uitbreiden en hun carrièremogelijkheden willen vergroten. Het is ontworpen om praktische vaardigheden te ontwikkelen die onmiddellijk kunnen worden toegepast in een professionele omgeving.
+Dit curriculum is speciaal ontworpen voor ervaren developers die hun vaardigheden willen verbeteren op het gebied van Node.js. Het is ontworpen om praktische vaardigheden te ontwikkelen die onmiddellijk kunnen worden toegepast in een professionele omgeving.
